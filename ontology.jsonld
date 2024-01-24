@@ -1,0 +1,611 @@
+[ {
+  "@id" : "http://purl.org/dc/terms/creator",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/issued",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/license",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/modified",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/title",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/vocab/vann/preferredNamespacePrefix",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/vocab/vann/preferredNamespaceUri",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.w3.org/2004/02/skos/core#Concept",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://marijnjanssensteenberg.github.io/rii#",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
+  "http://purl.org/dc/terms/issued" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2023-04-20T12:00:00"
+  } ],
+  "http://purl.org/dc/terms/license" : [ {
+    "@id" : "https://creativecommons.org/licenses/by/1.0/"
+  } ],
+  "http://purl.org/dc/terms/title" : [ {
+    "@value" : "RII: Restoration Intervention and Inspection Ontology"
+  } ],
+  "http://purl.org/vocab/vann/preferredNamespacePrefix" : [ {
+    "@value" : "rii"
+  } ],
+  "http://www.w3.org/2002/07/owl#versionInfo" : [ {
+    "@value" : "0.0.1"
+  } ]
+}, {
+  "@id" : "https://marijnjanssensteenberg.github.io/rii#Copy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "nl",
+    "@value" : "Zelfde vorm, zelfde (gelijksoortig) materiaal, zelfde verbindingstechniek"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Ladder step 3a: Copy"
+  }, {
+    "@language" : "nl",
+    "@value" : "Laddertrede 3a: Kopiëren"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://marijnjanssensteenberg.github.io/rii#Reconstruction"
+  } ]
+}, {
+  "@id" : "https://marijnjanssensteenberg.github.io/rii#Dimension",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "nl",
+    "@value" : "Afmeting"
+  }, {
+    "@language" : "en",
+    "@value" : "Dimension"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://marijnjanssensteenberg.github.io/rii#ElementProperty"
+  } ]
+}, {
+  "@id" : "https://marijnjanssensteenberg.github.io/rii#ElementProperty",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "nl",
+    "@value" : "Element Eigenschap"
+  }, {
+    "@language" : "en",
+    "@value" : "Element Property"
+  } ]
+}, {
+  "@id" : "https://marijnjanssensteenberg.github.io/rii#ExternalImage",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "External Image"
+  }, {
+    "@language" : "nl",
+    "@value" : "Externe Afbeelding"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://marijnjanssensteenberg.github.io/rii#ExternalResource"
+  } ]
+}, {
+  "@id" : "https://marijnjanssensteenberg.github.io/rii#ExternalResource",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "External Resource"
+  }, {
+    "@language" : "nl",
+    "@value" : "Externe Bron"
+  } ]
+}, {
+  "@id" : "https://marijnjanssensteenberg.github.io/rii#Imitation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "nl",
+    "@value" : "Zelfde vorm, ander materiaal en/of andere verbindingstechniek"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Ladder step 3b: Imitation"
+  }, {
+    "@language" : "nl",
+    "@value" : "Laddertrede 3b: Imiteren"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://marijnjanssensteenberg.github.io/rii#Reconstruction"
+  } ]
+}, {
+  "@id" : "https://marijnjanssensteenberg.github.io/rii#Improvement",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "nl",
+    "@value" : "Verbeteren prestatie; oorspronkelijke of aangepaste vorm, ander materiaal en/of andere verbindingstechniek."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Ladder step 3c: Improvement"
+  }, {
+    "@language" : "nl",
+    "@value" : "Laddertrede 3c: Verbeteren"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://marijnjanssensteenberg.github.io/rii#Reconstruction"
+  } ]
+}, {
+  "@id" : "https://marijnjanssensteenberg.github.io/rii#Intervention",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "nl",
+    "@value" : "Interventie"
+  }, {
+    "@language" : "en",
+    "@value" : "Intervention"
+  } ]
+}, {
+  "@id" : "https://marijnjanssensteenberg.github.io/rii#Length",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "nl",
+    "@value" : "Lengte"
+  }, {
+    "@language" : "en",
+    "@value" : "Length"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://marijnjanssensteenberg.github.io/rii#Dimension"
+  } ]
+}, {
+  "@id" : "https://marijnjanssensteenberg.github.io/rii#Location",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "nl",
+    "@value" : "Locatie"
+  }, {
+    "@language" : "en",
+    "@value" : "Location"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://marijnjanssensteenberg.github.io/rii#ElementProperty"
+  } ]
+}, {
+  "@id" : "https://marijnjanssensteenberg.github.io/rii#Material",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "nl",
+    "@value" : "Materiaal"
+  }, {
+    "@language" : "en",
+    "@value" : "Material"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://marijnjanssensteenberg.github.io/rii#ElementProperty"
+  } ]
+}, {
+  "@id" : "https://marijnjanssensteenberg.github.io/rii#PhysicalTag",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "nl",
+    "@value" : "Fysiek Merk"
+  }, {
+    "@language" : "en",
+    "@value" : "Physical Tag"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://marijnjanssensteenberg.github.io/rii#ElementProperty"
+  } ]
+}, {
+  "@id" : "https://marijnjanssensteenberg.github.io/rii#Preservation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "nl",
+    "@value" : "De bestaande situatie blijft dan zoveel mogelijk intact. Eventuele ingrepen dienen alleen om het verval te stoppen of verdere aantastingen te voorkomen, zoals reinigen of het aanbrengen van beschermende middelen."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Ladder step 1: Preservation"
+  }, {
+    "@language" : "nl",
+    "@value" : "Laddertrede 1: Conserveren"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://marijnjanssensteenberg.github.io/rii#Intervention"
+  } ]
+}, {
+  "@id" : "https://marijnjanssensteenberg.github.io/rii#Reconstruction",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "nl",
+    "@value" : "Bij onderdelen die ook niet meer kunnen worden gerepareerd, zit er maar één ding op: vernieuwen of vervangen. U heeft hierbij 3 opties (aflopend in voorkeur):"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Ladder step 3: Reconstruction"
+  }, {
+    "@language" : "nl",
+    "@value" : "Laddertrede 3: Vernieuwen"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://marijnjanssensteenberg.github.io/rii#Intervention"
+  } ]
+}, {
+  "@id" : "https://marijnjanssensteenberg.github.io/rii#Repair",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "nl",
+    "@value" : "Als conserveren alleen niet meer volstaat, kunnen beschadigde onderdelen worden gerepareerd. Let wel goed op dat niet meer materiaal wordt vervangen of toegevoegd dan strikt nodig is. Voorbeelden van reparaties zijn het repareren van beschadigde stenen of het plaatselijk vernieuwen van voegwerk."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Ladder step 2: Repair"
+  }, {
+    "@language" : "nl",
+    "@value" : "Laddertrede 2: Repareren"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://marijnjanssensteenberg.github.io/rii#Intervention"
+  } ]
+}, {
+  "@id" : "https://marijnjanssensteenberg.github.io/rii#Shape",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Shape"
+  }, {
+    "@language" : "nl",
+    "@value" : "Vorm"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://marijnjanssensteenberg.github.io/rii#ElementProperty"
+  } ]
+}, {
+  "@id" : "https://marijnjanssensteenberg.github.io/rii#Thickness",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "nl",
+    "@value" : "Dikte"
+  }, {
+    "@language" : "en",
+    "@value" : "Thickness"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://marijnjanssensteenberg.github.io/rii#Dimension"
+  } ]
+}, {
+  "@id" : "https://marijnjanssensteenberg.github.io/rii#Width",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "nl",
+    "@value" : "Breedte"
+  }, {
+    "@language" : "en",
+    "@value" : "Width"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://marijnjanssensteenberg.github.io/rii#Dimension"
+  } ]
+}, {
+  "@id" : "https://marijnjanssensteenberg.github.io/rii#capturedDuringTask",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "captured during task"
+  }, {
+    "@language" : "nl",
+    "@value" : "vastgelegd tijdens taak"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/cto#Task"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "https://marijnjanssensteenberg.github.io/rii#capturedInformation"
+  } ]
+}, {
+  "@id" : "https://marijnjanssensteenberg.github.io/rii#capturedInformation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "captured information"
+  }, {
+    "@language" : "nl",
+    "@value" : "vastgelegde informatie"
+  } ]
+}, {
+  "@id" : "https://marijnjanssensteenberg.github.io/rii#capturedResource",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "captured external resource"
+  }, {
+    "@language" : "nl",
+    "@value" : "vastgelegde externe bron"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://marijnjanssensteenberg.github.io/rii#capturedInformation"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "https://marijnjanssensteenberg.github.io/rii#resourceCapturedDuringTask"
+  } ]
+}, {
+  "@id" : "https://marijnjanssensteenberg.github.io/rii#chosenIntervention",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "chosen intervention"
+  }, {
+    "@language" : "nl",
+    "@value" : "gekozen interventie"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://marijnjanssensteenberg.github.io/rii#Intervention"
+  } ]
+}, {
+  "@id" : "https://marijnjanssensteenberg.github.io/rii#coveredByIntervention",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "nl",
+    "@value" : "behandeld door interventie"
+  }, {
+    "@language" : "en",
+    "@value" : "covered by intervention"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://marijnjanssensteenberg.github.io/rii#Intervention"
+  } ]
+}, {
+  "@id" : "https://marijnjanssensteenberg.github.io/rii#describesElement",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://marijnjanssensteenberg.github.io/rii#ExternalResource"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "nl",
+    "@value" : "beschrijft element"
+  }, {
+    "@language" : "en",
+    "@value" : "describes element"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/bot#Element"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "https://marijnjanssensteenberg.github.io/rii#hasDescriptionInResource"
+  } ]
+}, {
+  "@id" : "https://marijnjanssensteenberg.github.io/rii#filePath",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "file path"
+  }, {
+    "@language" : "nl",
+    "@value" : "heeft bestandslocatie"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#anyURI"
+  } ]
+}, {
+  "@id" : "https://marijnjanssensteenberg.github.io/rii#hasDescriptionInResource",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "has description in resource"
+  }, {
+    "@language" : "nl",
+    "@value" : "wordt beschreven in externe bron"
+  } ],
+  "http://www.w3.org/2002/07/owl#propertyChainAxiom" : [ {
+    "@list" : [ {
+      "@id" : "https://w3id.org/cto#isSubjectOfTask"
+    }, {
+      "@id" : "https://marijnjanssensteenberg.github.io/rii#capturedResource"
+    } ]
+  } ]
+}, {
+  "@id" : "https://marijnjanssensteenberg.github.io/rii#hasDimension",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "has dimension"
+  }, {
+    "@language" : "nl",
+    "@value" : "heeft afmeting"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://marijnjanssensteenberg.github.io/rii#Dimension"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://marijnjanssensteenberg.github.io/rii#hasElementProperty"
+  } ]
+}, {
+  "@id" : "https://marijnjanssensteenberg.github.io/rii#hasElementProperty",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "has element property"
+  }, {
+    "@language" : "nl",
+    "@value" : "heeft elementproperty"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://marijnjanssensteenberg.github.io/rii#ElementProperty"
+  } ]
+}, {
+  "@id" : "https://marijnjanssensteenberg.github.io/rii#hasLength",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "has length"
+  }, {
+    "@language" : "nl",
+    "@value" : "heeft lengte"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://marijnjanssensteenberg.github.io/rii#Length"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://marijnjanssensteenberg.github.io/rii#hasDimension"
+  } ]
+}, {
+  "@id" : "https://marijnjanssensteenberg.github.io/rii#hasLocation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "has location"
+  }, {
+    "@language" : "nl",
+    "@value" : "heeft locatie"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://marijnjanssensteenberg.github.io/rii#Location"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://marijnjanssensteenberg.github.io/rii#hasElementProperty"
+  } ]
+}, {
+  "@id" : "https://marijnjanssensteenberg.github.io/rii#hasMaterial",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "has material"
+  }, {
+    "@language" : "nl",
+    "@value" : "heeft materiaal"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://marijnjanssensteenberg.github.io/rii#Material"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://marijnjanssensteenberg.github.io/rii#hasElementProperty"
+  } ]
+}, {
+  "@id" : "https://marijnjanssensteenberg.github.io/rii#hasPhysicalTag",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "has physical tag"
+  }, {
+    "@language" : "nl",
+    "@value" : "heeft fysiek merk"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://marijnjanssensteenberg.github.io/rii#PhysicalTag"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://marijnjanssensteenberg.github.io/rii#hasElementProperty"
+  } ]
+}, {
+  "@id" : "https://marijnjanssensteenberg.github.io/rii#hasShape",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "has shape"
+  }, {
+    "@language" : "nl",
+    "@value" : "heeft vorm"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://marijnjanssensteenberg.github.io/rii#Shape"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://marijnjanssensteenberg.github.io/rii#hasElementProperty"
+  } ]
+}, {
+  "@id" : "https://marijnjanssensteenberg.github.io/rii#hasThickness",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "has thickness"
+  }, {
+    "@language" : "nl",
+    "@value" : "heeft dikte"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://marijnjanssensteenberg.github.io/rii#Thickness"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://marijnjanssensteenberg.github.io/rii#hasDimension"
+  } ]
+}, {
+  "@id" : "https://marijnjanssensteenberg.github.io/rii#hasWidth",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "has width"
+  }, {
+    "@language" : "nl",
+    "@value" : "heeft breedte"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://marijnjanssensteenberg.github.io/rii#Width"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://marijnjanssensteenberg.github.io/rii#hasDimension"
+  } ]
+}, {
+  "@id" : "https://marijnjanssensteenberg.github.io/rii#replacesElement",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/bot#Element"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "replaces element"
+  }, {
+    "@language" : "nl",
+    "@value" : "vervangt element"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/bot#Element"
+  } ]
+}, {
+  "@id" : "https://marijnjanssensteenberg.github.io/rii#resourceCapturedDuringTask",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://marijnjanssensteenberg.github.io/rii#ExternalResource"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "captured during task (external resource)"
+  }, {
+    "@language" : "nl",
+    "@value" : "vastgelegd tijdens taak (externe bron)"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://marijnjanssensteenberg.github.io/rii#capturedDuringTask"
+  } ]
+}, {
+  "@id" : "https://marijnjanssensteenberg.github.io/rii#seeAlsoThesaurusConcept",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "see also thesaurus concept"
+  }, {
+    "@language" : "nl",
+    "@value" : "zie ook thesaurus concept"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ]
+}, {
+  "@id" : "https://w3id.org/bot#Element",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://w3id.org/cto#Task",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://w3id.org/cto#TaskContext",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://w3id.org/cto#isSubjectOfTask",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty"
+  } ]
+} ]

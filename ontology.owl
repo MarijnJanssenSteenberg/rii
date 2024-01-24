@@ -1,0 +1,595 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="https://marijnjanssensteenberg.github.io/rii#"
+     xml:base="https://marijnjanssensteenberg.github.io/rii"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:vann="http://purl.org/vocab/vann/"
+     xmlns:terms="http://purl.org/dc/terms/">
+    <owl:Ontology rdf:about="https://marijnjanssensteenberg.github.io/rii#">
+        <terms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-04-20T12:00:00</terms:issued>
+        <terms:license rdf:resource="https://creativecommons.org/licenses/by/1.0/"/>
+        <terms:title>RII: Restoration Intervention and Inspection Ontology</terms:title>
+        <vann:preferredNamespacePrefix>rii</vann:preferredNamespacePrefix>
+        <owl:versionInfo>0.0.1</owl:versionInfo>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://purl.org/dc/terms/creator -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/creator"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/issued -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/issued"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/license -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/license"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/modified -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/modified"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/title -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/title"/>
+    
+
+
+    <!-- http://purl.org/vocab/vann/preferredNamespacePrefix -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/vocab/vann/preferredNamespacePrefix"/>
+    
+
+
+    <!-- http://purl.org/vocab/vann/preferredNamespaceUri -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/vocab/vann/preferredNamespaceUri"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- https://marijnjanssensteenberg.github.io/rii#capturedDuringTask -->
+
+
+    <owl:ObjectProperty rdf:about="https://marijnjanssensteenberg.github.io/rii#capturedDuringTask">
+        <owl:inverseOf rdf:resource="https://marijnjanssensteenberg.github.io/rii#capturedInformation"/>
+        <rdfs:range rdf:resource="https://w3id.org/cto#Task"/>
+        <rdfs:label xml:lang="en">captured during task</rdfs:label>
+        <rdfs:label xml:lang="nl">vastgelegd tijdens taak</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://marijnjanssensteenberg.github.io/rii#capturedInformation -->
+
+
+    <owl:ObjectProperty rdf:about="https://marijnjanssensteenberg.github.io/rii#capturedInformation">
+        <rdfs:label xml:lang="en">captured information</rdfs:label>
+        <rdfs:label xml:lang="nl">vastgelegde informatie</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://marijnjanssensteenberg.github.io/rii#capturedResource -->
+
+
+    <owl:ObjectProperty rdf:about="https://marijnjanssensteenberg.github.io/rii#capturedResource">
+        <rdfs:subPropertyOf rdf:resource="https://marijnjanssensteenberg.github.io/rii#capturedInformation"/>
+        <owl:inverseOf rdf:resource="https://marijnjanssensteenberg.github.io/rii#resourceCapturedDuringTask"/>
+        <rdfs:label xml:lang="en">captured external resource</rdfs:label>
+        <rdfs:label xml:lang="nl">vastgelegde externe bron</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://marijnjanssensteenberg.github.io/rii#chosenIntervention -->
+
+
+    <owl:ObjectProperty rdf:about="https://marijnjanssensteenberg.github.io/rii#chosenIntervention">
+        <rdfs:range rdf:resource="https://marijnjanssensteenberg.github.io/rii#Intervention"/>
+        <rdfs:label xml:lang="en">chosen intervention</rdfs:label>
+        <rdfs:label xml:lang="nl">gekozen interventie</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://marijnjanssensteenberg.github.io/rii#coveredByIntervention -->
+
+
+    <owl:ObjectProperty rdf:about="https://marijnjanssensteenberg.github.io/rii#coveredByIntervention">
+        <rdfs:range rdf:resource="https://marijnjanssensteenberg.github.io/rii#Intervention"/>
+        <rdfs:label xml:lang="nl">behandeld door interventie</rdfs:label>
+        <rdfs:label xml:lang="en">covered by intervention</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://marijnjanssensteenberg.github.io/rii#describesElement -->
+
+
+    <owl:ObjectProperty rdf:about="https://marijnjanssensteenberg.github.io/rii#describesElement">
+        <owl:inverseOf rdf:resource="https://marijnjanssensteenberg.github.io/rii#hasDescriptionInResource"/>
+        <rdfs:domain rdf:resource="https://marijnjanssensteenberg.github.io/rii#ExternalResource"/>
+        <rdfs:range rdf:resource="https://w3id.org/bot#Element"/>
+        <rdfs:label xml:lang="nl">beschrijft element</rdfs:label>
+        <rdfs:label xml:lang="en">describes element</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://marijnjanssensteenberg.github.io/rii#hasDescriptionInResource -->
+
+
+    <owl:ObjectProperty rdf:about="https://marijnjanssensteenberg.github.io/rii#hasDescriptionInResource">
+        <owl:propertyChainAxiom rdf:parseType="Collection">
+            <rdf:Description rdf:about="https://w3id.org/cto#isSubjectOfTask"/>
+            <rdf:Description rdf:about="https://marijnjanssensteenberg.github.io/rii#capturedResource"/>
+        </owl:propertyChainAxiom>
+        <rdfs:label xml:lang="en">has description in resource</rdfs:label>
+        <rdfs:label xml:lang="nl">wordt beschreven in externe bron</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://marijnjanssensteenberg.github.io/rii#hasDimension -->
+
+
+    <owl:ObjectProperty rdf:about="https://marijnjanssensteenberg.github.io/rii#hasDimension">
+        <rdfs:subPropertyOf rdf:resource="https://marijnjanssensteenberg.github.io/rii#hasElementProperty"/>
+        <rdfs:range rdf:resource="https://marijnjanssensteenberg.github.io/rii#Dimension"/>
+        <rdfs:label xml:lang="en">has dimension</rdfs:label>
+        <rdfs:label xml:lang="nl">heeft afmeting</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://marijnjanssensteenberg.github.io/rii#hasElementProperty -->
+
+
+    <owl:ObjectProperty rdf:about="https://marijnjanssensteenberg.github.io/rii#hasElementProperty">
+        <rdfs:range rdf:resource="https://marijnjanssensteenberg.github.io/rii#ElementProperty"/>
+        <rdfs:label xml:lang="en">has element property</rdfs:label>
+        <rdfs:label xml:lang="nl">heeft elementproperty</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://marijnjanssensteenberg.github.io/rii#hasLength -->
+
+
+    <owl:ObjectProperty rdf:about="https://marijnjanssensteenberg.github.io/rii#hasLength">
+        <rdfs:subPropertyOf rdf:resource="https://marijnjanssensteenberg.github.io/rii#hasDimension"/>
+        <rdfs:range rdf:resource="https://marijnjanssensteenberg.github.io/rii#Length"/>
+        <rdfs:label xml:lang="en">has length</rdfs:label>
+        <rdfs:label xml:lang="nl">heeft lengte</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://marijnjanssensteenberg.github.io/rii#hasLocation -->
+
+
+    <owl:ObjectProperty rdf:about="https://marijnjanssensteenberg.github.io/rii#hasLocation">
+        <rdfs:subPropertyOf rdf:resource="https://marijnjanssensteenberg.github.io/rii#hasElementProperty"/>
+        <rdfs:range rdf:resource="https://marijnjanssensteenberg.github.io/rii#Location"/>
+        <rdfs:label xml:lang="en">has location</rdfs:label>
+        <rdfs:label xml:lang="nl">heeft locatie</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://marijnjanssensteenberg.github.io/rii#hasMaterial -->
+
+
+    <owl:ObjectProperty rdf:about="https://marijnjanssensteenberg.github.io/rii#hasMaterial">
+        <rdfs:subPropertyOf rdf:resource="https://marijnjanssensteenberg.github.io/rii#hasElementProperty"/>
+        <rdfs:range rdf:resource="https://marijnjanssensteenberg.github.io/rii#Material"/>
+        <rdfs:label xml:lang="en">has material</rdfs:label>
+        <rdfs:label xml:lang="nl">heeft materiaal</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://marijnjanssensteenberg.github.io/rii#hasPhysicalTag -->
+
+
+    <owl:ObjectProperty rdf:about="https://marijnjanssensteenberg.github.io/rii#hasPhysicalTag">
+        <rdfs:subPropertyOf rdf:resource="https://marijnjanssensteenberg.github.io/rii#hasElementProperty"/>
+        <rdfs:range rdf:resource="https://marijnjanssensteenberg.github.io/rii#PhysicalTag"/>
+        <rdfs:label xml:lang="en">has physical tag</rdfs:label>
+        <rdfs:label xml:lang="nl">heeft fysiek merk</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://marijnjanssensteenberg.github.io/rii#hasShape -->
+
+
+    <owl:ObjectProperty rdf:about="https://marijnjanssensteenberg.github.io/rii#hasShape">
+        <rdfs:subPropertyOf rdf:resource="https://marijnjanssensteenberg.github.io/rii#hasElementProperty"/>
+        <rdfs:range rdf:resource="https://marijnjanssensteenberg.github.io/rii#Shape"/>
+        <rdfs:label xml:lang="en">has shape</rdfs:label>
+        <rdfs:label xml:lang="nl">heeft vorm</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://marijnjanssensteenberg.github.io/rii#hasThickness -->
+
+
+    <owl:ObjectProperty rdf:about="https://marijnjanssensteenberg.github.io/rii#hasThickness">
+        <rdfs:subPropertyOf rdf:resource="https://marijnjanssensteenberg.github.io/rii#hasDimension"/>
+        <rdfs:range rdf:resource="https://marijnjanssensteenberg.github.io/rii#Thickness"/>
+        <rdfs:label xml:lang="en">has thickness</rdfs:label>
+        <rdfs:label xml:lang="nl">heeft dikte</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://marijnjanssensteenberg.github.io/rii#hasWidth -->
+
+
+    <owl:ObjectProperty rdf:about="https://marijnjanssensteenberg.github.io/rii#hasWidth">
+        <rdfs:subPropertyOf rdf:resource="https://marijnjanssensteenberg.github.io/rii#hasDimension"/>
+        <rdfs:range rdf:resource="https://marijnjanssensteenberg.github.io/rii#Width"/>
+        <rdfs:label xml:lang="en">has width</rdfs:label>
+        <rdfs:label xml:lang="nl">heeft breedte</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://marijnjanssensteenberg.github.io/rii#replacesElement -->
+
+
+    <owl:ObjectProperty rdf:about="https://marijnjanssensteenberg.github.io/rii#replacesElement">
+        <rdfs:domain rdf:resource="https://w3id.org/bot#Element"/>
+        <rdfs:range rdf:resource="https://w3id.org/bot#Element"/>
+        <rdfs:label xml:lang="en">replaces element</rdfs:label>
+        <rdfs:label xml:lang="nl">vervangt element</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://marijnjanssensteenberg.github.io/rii#resourceCapturedDuringTask -->
+
+
+    <owl:ObjectProperty rdf:about="https://marijnjanssensteenberg.github.io/rii#resourceCapturedDuringTask">
+        <rdfs:subPropertyOf rdf:resource="https://marijnjanssensteenberg.github.io/rii#capturedDuringTask"/>
+        <rdfs:domain rdf:resource="https://marijnjanssensteenberg.github.io/rii#ExternalResource"/>
+        <rdfs:label xml:lang="en">captured during task (external resource)</rdfs:label>
+        <rdfs:label xml:lang="nl">vastgelegd tijdens taak (externe bron)</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://marijnjanssensteenberg.github.io/rii#seeAlsoThesaurusConcept -->
+
+
+    <owl:ObjectProperty rdf:about="https://marijnjanssensteenberg.github.io/rii#seeAlsoThesaurusConcept">
+        <rdfs:range rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">see also thesaurus concept</rdfs:label>
+        <rdfs:label xml:lang="nl">zie ook thesaurus concept</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/cto#isSubjectOfTask -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/cto#isSubjectOfTask">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- https://marijnjanssensteenberg.github.io/rii#filePath -->
+
+
+    <owl:DatatypeProperty rdf:about="https://marijnjanssensteenberg.github.io/rii#filePath">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#anyURI"/>
+        <rdfs:label xml:lang="en">file path</rdfs:label>
+        <rdfs:label xml:lang="nl">heeft bestandslocatie</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#Concept -->
+
+
+    <owl:Class rdf:about="http://www.w3.org/2004/02/skos/core#Concept"/>
+    
+
+
+    <!-- https://marijnjanssensteenberg.github.io/rii#Copy -->
+
+
+    <owl:Class rdf:about="https://marijnjanssensteenberg.github.io/rii#Copy">
+        <rdfs:subClassOf rdf:resource="https://marijnjanssensteenberg.github.io/rii#Reconstruction"/>
+        <rdfs:comment xml:lang="nl">Zelfde vorm, zelfde (gelijksoortig) materiaal, zelfde verbindingstechniek</rdfs:comment>
+        <rdfs:label xml:lang="en">Ladder step 3a: Copy</rdfs:label>
+        <rdfs:label xml:lang="nl">Laddertrede 3a: Kopiëren</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://marijnjanssensteenberg.github.io/rii#Dimension -->
+
+
+    <owl:Class rdf:about="https://marijnjanssensteenberg.github.io/rii#Dimension">
+        <rdfs:subClassOf rdf:resource="https://marijnjanssensteenberg.github.io/rii#ElementProperty"/>
+        <rdfs:label xml:lang="nl">Afmeting</rdfs:label>
+        <rdfs:label xml:lang="en">Dimension</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://marijnjanssensteenberg.github.io/rii#ElementProperty -->
+
+
+    <owl:Class rdf:about="https://marijnjanssensteenberg.github.io/rii#ElementProperty">
+        <rdfs:label xml:lang="nl">Element Eigenschap</rdfs:label>
+        <rdfs:label xml:lang="en">Element Property</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://marijnjanssensteenberg.github.io/rii#ExternalImage -->
+
+
+    <owl:Class rdf:about="https://marijnjanssensteenberg.github.io/rii#ExternalImage">
+        <rdfs:subClassOf rdf:resource="https://marijnjanssensteenberg.github.io/rii#ExternalResource"/>
+        <rdfs:label xml:lang="en">External Image</rdfs:label>
+        <rdfs:label xml:lang="nl">Externe Afbeelding</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://marijnjanssensteenberg.github.io/rii#ExternalResource -->
+
+
+    <owl:Class rdf:about="https://marijnjanssensteenberg.github.io/rii#ExternalResource">
+        <rdfs:label xml:lang="en">External Resource</rdfs:label>
+        <rdfs:label xml:lang="nl">Externe Bron</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://marijnjanssensteenberg.github.io/rii#Imitation -->
+
+
+    <owl:Class rdf:about="https://marijnjanssensteenberg.github.io/rii#Imitation">
+        <rdfs:subClassOf rdf:resource="https://marijnjanssensteenberg.github.io/rii#Reconstruction"/>
+        <rdfs:comment xml:lang="nl">Zelfde vorm, ander materiaal en/of andere verbindingstechniek</rdfs:comment>
+        <rdfs:label xml:lang="en">Ladder step 3b: Imitation</rdfs:label>
+        <rdfs:label xml:lang="nl">Laddertrede 3b: Imiteren</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://marijnjanssensteenberg.github.io/rii#Improvement -->
+
+
+    <owl:Class rdf:about="https://marijnjanssensteenberg.github.io/rii#Improvement">
+        <rdfs:subClassOf rdf:resource="https://marijnjanssensteenberg.github.io/rii#Reconstruction"/>
+        <rdfs:comment xml:lang="nl">Verbeteren prestatie; oorspronkelijke of aangepaste vorm, ander materiaal en/of andere verbindingstechniek.</rdfs:comment>
+        <rdfs:label xml:lang="en">Ladder step 3c: Improvement</rdfs:label>
+        <rdfs:label xml:lang="nl">Laddertrede 3c: Verbeteren</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://marijnjanssensteenberg.github.io/rii#Intervention -->
+
+
+    <owl:Class rdf:about="https://marijnjanssensteenberg.github.io/rii#Intervention">
+        <rdfs:label xml:lang="nl">Interventie</rdfs:label>
+        <rdfs:label xml:lang="en">Intervention</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://marijnjanssensteenberg.github.io/rii#Length -->
+
+
+    <owl:Class rdf:about="https://marijnjanssensteenberg.github.io/rii#Length">
+        <rdfs:subClassOf rdf:resource="https://marijnjanssensteenberg.github.io/rii#Dimension"/>
+        <rdfs:label xml:lang="nl">Lengte</rdfs:label>
+        <rdfs:label xml:lang="en">Length</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://marijnjanssensteenberg.github.io/rii#Location -->
+
+
+    <owl:Class rdf:about="https://marijnjanssensteenberg.github.io/rii#Location">
+        <rdfs:subClassOf rdf:resource="https://marijnjanssensteenberg.github.io/rii#ElementProperty"/>
+        <rdfs:label xml:lang="nl">Locatie</rdfs:label>
+        <rdfs:label xml:lang="en">Location</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://marijnjanssensteenberg.github.io/rii#Material -->
+
+
+    <owl:Class rdf:about="https://marijnjanssensteenberg.github.io/rii#Material">
+        <rdfs:subClassOf rdf:resource="https://marijnjanssensteenberg.github.io/rii#ElementProperty"/>
+        <rdfs:label xml:lang="nl">Materiaal</rdfs:label>
+        <rdfs:label xml:lang="en">Material</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://marijnjanssensteenberg.github.io/rii#PhysicalTag -->
+
+
+    <owl:Class rdf:about="https://marijnjanssensteenberg.github.io/rii#PhysicalTag">
+        <rdfs:subClassOf rdf:resource="https://marijnjanssensteenberg.github.io/rii#ElementProperty"/>
+        <rdfs:label xml:lang="nl">Fysiek Merk</rdfs:label>
+        <rdfs:label xml:lang="en">Physical Tag</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://marijnjanssensteenberg.github.io/rii#Preservation -->
+
+
+    <owl:Class rdf:about="https://marijnjanssensteenberg.github.io/rii#Preservation">
+        <rdfs:subClassOf rdf:resource="https://marijnjanssensteenberg.github.io/rii#Intervention"/>
+        <rdfs:comment xml:lang="nl">De bestaande situatie blijft dan zoveel mogelijk intact. Eventuele ingrepen dienen alleen om het verval te stoppen of verdere aantastingen te voorkomen, zoals reinigen of het aanbrengen van beschermende middelen.</rdfs:comment>
+        <rdfs:label xml:lang="en">Ladder step 1: Preservation</rdfs:label>
+        <rdfs:label xml:lang="nl">Laddertrede 1: Conserveren</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://marijnjanssensteenberg.github.io/rii#Reconstruction -->
+
+
+    <owl:Class rdf:about="https://marijnjanssensteenberg.github.io/rii#Reconstruction">
+        <rdfs:subClassOf rdf:resource="https://marijnjanssensteenberg.github.io/rii#Intervention"/>
+        <rdfs:comment xml:lang="nl">Bij onderdelen die ook niet meer kunnen worden gerepareerd, zit er maar één ding op: vernieuwen of vervangen. U heeft hierbij 3 opties (aflopend in voorkeur):</rdfs:comment>
+        <rdfs:label xml:lang="en">Ladder step 3: Reconstruction</rdfs:label>
+        <rdfs:label xml:lang="nl">Laddertrede 3: Vernieuwen</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://marijnjanssensteenberg.github.io/rii#Repair -->
+
+
+    <owl:Class rdf:about="https://marijnjanssensteenberg.github.io/rii#Repair">
+        <rdfs:subClassOf rdf:resource="https://marijnjanssensteenberg.github.io/rii#Intervention"/>
+        <rdfs:comment xml:lang="nl">Als conserveren alleen niet meer volstaat, kunnen beschadigde onderdelen worden gerepareerd. Let wel goed op dat niet meer materiaal wordt vervangen of toegevoegd dan strikt nodig is. Voorbeelden van reparaties zijn het repareren van beschadigde stenen of het plaatselijk vernieuwen van voegwerk.</rdfs:comment>
+        <rdfs:label xml:lang="en">Ladder step 2: Repair</rdfs:label>
+        <rdfs:label xml:lang="nl">Laddertrede 2: Repareren</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://marijnjanssensteenberg.github.io/rii#Shape -->
+
+
+    <owl:Class rdf:about="https://marijnjanssensteenberg.github.io/rii#Shape">
+        <rdfs:subClassOf rdf:resource="https://marijnjanssensteenberg.github.io/rii#ElementProperty"/>
+        <rdfs:label xml:lang="en">Shape</rdfs:label>
+        <rdfs:label xml:lang="nl">Vorm</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://marijnjanssensteenberg.github.io/rii#Thickness -->
+
+
+    <owl:Class rdf:about="https://marijnjanssensteenberg.github.io/rii#Thickness">
+        <rdfs:subClassOf rdf:resource="https://marijnjanssensteenberg.github.io/rii#Dimension"/>
+        <rdfs:label xml:lang="nl">Dikte</rdfs:label>
+        <rdfs:label xml:lang="en">Thickness</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://marijnjanssensteenberg.github.io/rii#Width -->
+
+
+    <owl:Class rdf:about="https://marijnjanssensteenberg.github.io/rii#Width">
+        <rdfs:subClassOf rdf:resource="https://marijnjanssensteenberg.github.io/rii#Dimension"/>
+        <rdfs:label xml:lang="nl">Breedte</rdfs:label>
+        <rdfs:label xml:lang="en">Width</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/bot#Element -->
+
+
+    <owl:Class rdf:about="https://w3id.org/bot#Element"/>
+    
+
+
+    <!-- https://w3id.org/cto#Task -->
+
+
+    <owl:Class rdf:about="https://w3id.org/cto#Task"/>
+    
+
+
+    <!-- https://w3id.org/cto#TaskContext -->
+
+
+    <owl:Class rdf:about="https://w3id.org/cto#TaskContext"/>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/ -->
+
+

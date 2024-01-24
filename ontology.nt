@@ -1,0 +1,330 @@
+<https://marijnjanssensteenberg.github.io/rii#> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<https://marijnjanssensteenberg.github.io/rii#> <http://purl.org/dc/terms/issued> "2023-04-20T12:00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<https://marijnjanssensteenberg.github.io/rii#> <http://purl.org/dc/terms/license> <https://creativecommons.org/licenses/by/1.0/> .
+<https://marijnjanssensteenberg.github.io/rii#> <http://purl.org/dc/terms/title> "RII: Restoration Intervention and Inspection Ontology" .
+<https://marijnjanssensteenberg.github.io/rii#> <http://purl.org/vocab/vann/preferredNamespacePrefix> "rii" .
+<https://marijnjanssensteenberg.github.io/rii#> <http://www.w3.org/2002/07/owl#versionInfo> "0.0.1" .
+# 
+# 
+# #################################################################
+# #
+# #    Annotation properties
+# #
+# #################################################################
+# 
+# 
+# http://purl.org/dc/terms/creator
+<http://purl.org/dc/terms/creator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/issued
+<http://purl.org/dc/terms/issued> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/license
+<http://purl.org/dc/terms/license> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/modified
+<http://purl.org/dc/terms/modified> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/title
+<http://purl.org/dc/terms/title> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/vocab/vann/preferredNamespacePrefix
+<http://purl.org/vocab/vann/preferredNamespacePrefix> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/vocab/vann/preferredNamespaceUri
+<http://purl.org/vocab/vann/preferredNamespaceUri> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# https://marijnjanssensteenberg.github.io/rii#capturedDuringTask
+<https://marijnjanssensteenberg.github.io/rii#capturedDuringTask> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://marijnjanssensteenberg.github.io/rii#capturedDuringTask> <http://www.w3.org/2002/07/owl#inverseOf> <https://marijnjanssensteenberg.github.io/rii#capturedInformation> .
+<https://marijnjanssensteenberg.github.io/rii#capturedDuringTask> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/cto#Task> .
+<https://marijnjanssensteenberg.github.io/rii#capturedDuringTask> <http://www.w3.org/2000/01/rdf-schema#label> "captured during task"@en .
+<https://marijnjanssensteenberg.github.io/rii#capturedDuringTask> <http://www.w3.org/2000/01/rdf-schema#label> "vastgelegd tijdens taak"@nl .
+# 
+# https://marijnjanssensteenberg.github.io/rii#capturedInformation
+<https://marijnjanssensteenberg.github.io/rii#capturedInformation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://marijnjanssensteenberg.github.io/rii#capturedInformation> <http://www.w3.org/2000/01/rdf-schema#label> "captured information"@en .
+<https://marijnjanssensteenberg.github.io/rii#capturedInformation> <http://www.w3.org/2000/01/rdf-schema#label> "vastgelegde informatie"@nl .
+# 
+# https://marijnjanssensteenberg.github.io/rii#capturedResource
+<https://marijnjanssensteenberg.github.io/rii#capturedResource> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://marijnjanssensteenberg.github.io/rii#capturedResource> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://marijnjanssensteenberg.github.io/rii#capturedInformation> .
+<https://marijnjanssensteenberg.github.io/rii#capturedResource> <http://www.w3.org/2002/07/owl#inverseOf> <https://marijnjanssensteenberg.github.io/rii#resourceCapturedDuringTask> .
+<https://marijnjanssensteenberg.github.io/rii#capturedResource> <http://www.w3.org/2000/01/rdf-schema#label> "captured external resource"@en .
+<https://marijnjanssensteenberg.github.io/rii#capturedResource> <http://www.w3.org/2000/01/rdf-schema#label> "vastgelegde externe bron"@nl .
+# 
+# https://marijnjanssensteenberg.github.io/rii#chosenIntervention
+<https://marijnjanssensteenberg.github.io/rii#chosenIntervention> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://marijnjanssensteenberg.github.io/rii#chosenIntervention> <http://www.w3.org/2000/01/rdf-schema#range> <https://marijnjanssensteenberg.github.io/rii#Intervention> .
+<https://marijnjanssensteenberg.github.io/rii#chosenIntervention> <http://www.w3.org/2000/01/rdf-schema#label> "chosen intervention"@en .
+<https://marijnjanssensteenberg.github.io/rii#chosenIntervention> <http://www.w3.org/2000/01/rdf-schema#label> "gekozen interventie"@nl .
+# 
+# https://marijnjanssensteenberg.github.io/rii#coveredByIntervention
+<https://marijnjanssensteenberg.github.io/rii#coveredByIntervention> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://marijnjanssensteenberg.github.io/rii#coveredByIntervention> <http://www.w3.org/2000/01/rdf-schema#range> <https://marijnjanssensteenberg.github.io/rii#Intervention> .
+<https://marijnjanssensteenberg.github.io/rii#coveredByIntervention> <http://www.w3.org/2000/01/rdf-schema#label> "behandeld door interventie"@nl .
+<https://marijnjanssensteenberg.github.io/rii#coveredByIntervention> <http://www.w3.org/2000/01/rdf-schema#label> "covered by intervention"@en .
+# 
+# https://marijnjanssensteenberg.github.io/rii#describesElement
+<https://marijnjanssensteenberg.github.io/rii#describesElement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://marijnjanssensteenberg.github.io/rii#describesElement> <http://www.w3.org/2002/07/owl#inverseOf> <https://marijnjanssensteenberg.github.io/rii#hasDescriptionInResource> .
+<https://marijnjanssensteenberg.github.io/rii#describesElement> <http://www.w3.org/2000/01/rdf-schema#domain> <https://marijnjanssensteenberg.github.io/rii#ExternalResource> .
+<https://marijnjanssensteenberg.github.io/rii#describesElement> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/bot#Element> .
+<https://marijnjanssensteenberg.github.io/rii#describesElement> <http://www.w3.org/2000/01/rdf-schema#label> "beschrijft element"@nl .
+<https://marijnjanssensteenberg.github.io/rii#describesElement> <http://www.w3.org/2000/01/rdf-schema#label> "describes element"@en .
+# 
+# https://marijnjanssensteenberg.github.io/rii#hasDescriptionInResource
+<https://marijnjanssensteenberg.github.io/rii#hasDescriptionInResource> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://marijnjanssensteenberg.github.io/rii#hasDescriptionInResource> <http://www.w3.org/2002/07/owl#propertyChainAxiom> _:genid2 .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid1 .
+_:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://marijnjanssensteenberg.github.io/rii#capturedResource> .
+_:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/cto#isSubjectOfTask> .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+<https://marijnjanssensteenberg.github.io/rii#hasDescriptionInResource> <http://www.w3.org/2000/01/rdf-schema#label> "has description in resource"@en .
+<https://marijnjanssensteenberg.github.io/rii#hasDescriptionInResource> <http://www.w3.org/2000/01/rdf-schema#label> "wordt beschreven in externe bron"@nl .
+# 
+# https://marijnjanssensteenberg.github.io/rii#hasDimension
+<https://marijnjanssensteenberg.github.io/rii#hasDimension> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://marijnjanssensteenberg.github.io/rii#hasDimension> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://marijnjanssensteenberg.github.io/rii#hasElementProperty> .
+<https://marijnjanssensteenberg.github.io/rii#hasDimension> <http://www.w3.org/2000/01/rdf-schema#range> <https://marijnjanssensteenberg.github.io/rii#Dimension> .
+<https://marijnjanssensteenberg.github.io/rii#hasDimension> <http://www.w3.org/2000/01/rdf-schema#label> "has dimension"@en .
+<https://marijnjanssensteenberg.github.io/rii#hasDimension> <http://www.w3.org/2000/01/rdf-schema#label> "heeft afmeting"@nl .
+# 
+# https://marijnjanssensteenberg.github.io/rii#hasElementProperty
+<https://marijnjanssensteenberg.github.io/rii#hasElementProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://marijnjanssensteenberg.github.io/rii#hasElementProperty> <http://www.w3.org/2000/01/rdf-schema#range> <https://marijnjanssensteenberg.github.io/rii#ElementProperty> .
+<https://marijnjanssensteenberg.github.io/rii#hasElementProperty> <http://www.w3.org/2000/01/rdf-schema#label> "has element property"@en .
+<https://marijnjanssensteenberg.github.io/rii#hasElementProperty> <http://www.w3.org/2000/01/rdf-schema#label> "heeft elementproperty"@nl .
+# 
+# https://marijnjanssensteenberg.github.io/rii#hasLength
+<https://marijnjanssensteenberg.github.io/rii#hasLength> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://marijnjanssensteenberg.github.io/rii#hasLength> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://marijnjanssensteenberg.github.io/rii#hasDimension> .
+<https://marijnjanssensteenberg.github.io/rii#hasLength> <http://www.w3.org/2000/01/rdf-schema#range> <https://marijnjanssensteenberg.github.io/rii#Length> .
+<https://marijnjanssensteenberg.github.io/rii#hasLength> <http://www.w3.org/2000/01/rdf-schema#label> "has length"@en .
+<https://marijnjanssensteenberg.github.io/rii#hasLength> <http://www.w3.org/2000/01/rdf-schema#label> "heeft lengte"@nl .
+# 
+# https://marijnjanssensteenberg.github.io/rii#hasLocation
+<https://marijnjanssensteenberg.github.io/rii#hasLocation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://marijnjanssensteenberg.github.io/rii#hasLocation> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://marijnjanssensteenberg.github.io/rii#hasElementProperty> .
+<https://marijnjanssensteenberg.github.io/rii#hasLocation> <http://www.w3.org/2000/01/rdf-schema#range> <https://marijnjanssensteenberg.github.io/rii#Location> .
+<https://marijnjanssensteenberg.github.io/rii#hasLocation> <http://www.w3.org/2000/01/rdf-schema#label> "has location"@en .
+<https://marijnjanssensteenberg.github.io/rii#hasLocation> <http://www.w3.org/2000/01/rdf-schema#label> "heeft locatie"@nl .
+# 
+# https://marijnjanssensteenberg.github.io/rii#hasMaterial
+<https://marijnjanssensteenberg.github.io/rii#hasMaterial> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://marijnjanssensteenberg.github.io/rii#hasMaterial> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://marijnjanssensteenberg.github.io/rii#hasElementProperty> .
+<https://marijnjanssensteenberg.github.io/rii#hasMaterial> <http://www.w3.org/2000/01/rdf-schema#range> <https://marijnjanssensteenberg.github.io/rii#Material> .
+<https://marijnjanssensteenberg.github.io/rii#hasMaterial> <http://www.w3.org/2000/01/rdf-schema#label> "has material"@en .
+<https://marijnjanssensteenberg.github.io/rii#hasMaterial> <http://www.w3.org/2000/01/rdf-schema#label> "heeft materiaal"@nl .
+# 
+# https://marijnjanssensteenberg.github.io/rii#hasPhysicalTag
+<https://marijnjanssensteenberg.github.io/rii#hasPhysicalTag> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://marijnjanssensteenberg.github.io/rii#hasPhysicalTag> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://marijnjanssensteenberg.github.io/rii#hasElementProperty> .
+<https://marijnjanssensteenberg.github.io/rii#hasPhysicalTag> <http://www.w3.org/2000/01/rdf-schema#range> <https://marijnjanssensteenberg.github.io/rii#PhysicalTag> .
+<https://marijnjanssensteenberg.github.io/rii#hasPhysicalTag> <http://www.w3.org/2000/01/rdf-schema#label> "has physical tag"@en .
+<https://marijnjanssensteenberg.github.io/rii#hasPhysicalTag> <http://www.w3.org/2000/01/rdf-schema#label> "heeft fysiek merk"@nl .
+# 
+# https://marijnjanssensteenberg.github.io/rii#hasShape
+<https://marijnjanssensteenberg.github.io/rii#hasShape> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://marijnjanssensteenberg.github.io/rii#hasShape> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://marijnjanssensteenberg.github.io/rii#hasElementProperty> .
+<https://marijnjanssensteenberg.github.io/rii#hasShape> <http://www.w3.org/2000/01/rdf-schema#range> <https://marijnjanssensteenberg.github.io/rii#Shape> .
+<https://marijnjanssensteenberg.github.io/rii#hasShape> <http://www.w3.org/2000/01/rdf-schema#label> "has shape"@en .
+<https://marijnjanssensteenberg.github.io/rii#hasShape> <http://www.w3.org/2000/01/rdf-schema#label> "heeft vorm"@nl .
+# 
+# https://marijnjanssensteenberg.github.io/rii#hasThickness
+<https://marijnjanssensteenberg.github.io/rii#hasThickness> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://marijnjanssensteenberg.github.io/rii#hasThickness> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://marijnjanssensteenberg.github.io/rii#hasDimension> .
+<https://marijnjanssensteenberg.github.io/rii#hasThickness> <http://www.w3.org/2000/01/rdf-schema#range> <https://marijnjanssensteenberg.github.io/rii#Thickness> .
+<https://marijnjanssensteenberg.github.io/rii#hasThickness> <http://www.w3.org/2000/01/rdf-schema#label> "has thickness"@en .
+<https://marijnjanssensteenberg.github.io/rii#hasThickness> <http://www.w3.org/2000/01/rdf-schema#label> "heeft dikte"@nl .
+# 
+# https://marijnjanssensteenberg.github.io/rii#hasWidth
+<https://marijnjanssensteenberg.github.io/rii#hasWidth> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://marijnjanssensteenberg.github.io/rii#hasWidth> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://marijnjanssensteenberg.github.io/rii#hasDimension> .
+<https://marijnjanssensteenberg.github.io/rii#hasWidth> <http://www.w3.org/2000/01/rdf-schema#range> <https://marijnjanssensteenberg.github.io/rii#Width> .
+<https://marijnjanssensteenberg.github.io/rii#hasWidth> <http://www.w3.org/2000/01/rdf-schema#label> "has width"@en .
+<https://marijnjanssensteenberg.github.io/rii#hasWidth> <http://www.w3.org/2000/01/rdf-schema#label> "heeft breedte"@nl .
+# 
+# https://marijnjanssensteenberg.github.io/rii#replacesElement
+<https://marijnjanssensteenberg.github.io/rii#replacesElement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://marijnjanssensteenberg.github.io/rii#replacesElement> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/bot#Element> .
+<https://marijnjanssensteenberg.github.io/rii#replacesElement> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/bot#Element> .
+<https://marijnjanssensteenberg.github.io/rii#replacesElement> <http://www.w3.org/2000/01/rdf-schema#label> "replaces element"@en .
+<https://marijnjanssensteenberg.github.io/rii#replacesElement> <http://www.w3.org/2000/01/rdf-schema#label> "vervangt element"@nl .
+# 
+# https://marijnjanssensteenberg.github.io/rii#resourceCapturedDuringTask
+<https://marijnjanssensteenberg.github.io/rii#resourceCapturedDuringTask> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://marijnjanssensteenberg.github.io/rii#resourceCapturedDuringTask> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://marijnjanssensteenberg.github.io/rii#capturedDuringTask> .
+<https://marijnjanssensteenberg.github.io/rii#resourceCapturedDuringTask> <http://www.w3.org/2000/01/rdf-schema#domain> <https://marijnjanssensteenberg.github.io/rii#ExternalResource> .
+<https://marijnjanssensteenberg.github.io/rii#resourceCapturedDuringTask> <http://www.w3.org/2000/01/rdf-schema#label> "captured during task (external resource)"@en .
+<https://marijnjanssensteenberg.github.io/rii#resourceCapturedDuringTask> <http://www.w3.org/2000/01/rdf-schema#label> "vastgelegd tijdens taak (externe bron)"@nl .
+# 
+# https://marijnjanssensteenberg.github.io/rii#seeAlsoThesaurusConcept
+<https://marijnjanssensteenberg.github.io/rii#seeAlsoThesaurusConcept> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://marijnjanssensteenberg.github.io/rii#seeAlsoThesaurusConcept> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2004/02/skos/core#Concept> .
+<https://marijnjanssensteenberg.github.io/rii#seeAlsoThesaurusConcept> <http://www.w3.org/2000/01/rdf-schema#label> "see also thesaurus concept"@en .
+<https://marijnjanssensteenberg.github.io/rii#seeAlsoThesaurusConcept> <http://www.w3.org/2000/01/rdf-schema#label> "zie ook thesaurus concept"@nl .
+# 
+# https://w3id.org/cto#isSubjectOfTask
+<https://w3id.org/cto#isSubjectOfTask> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/cto#isSubjectOfTask> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Data properties
+# #
+# #################################################################
+# 
+# 
+# https://marijnjanssensteenberg.github.io/rii#filePath
+<https://marijnjanssensteenberg.github.io/rii#filePath> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://marijnjanssensteenberg.github.io/rii#filePath> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#anyURI> .
+<https://marijnjanssensteenberg.github.io/rii#filePath> <http://www.w3.org/2000/01/rdf-schema#label> "file path"@en .
+<https://marijnjanssensteenberg.github.io/rii#filePath> <http://www.w3.org/2000/01/rdf-schema#label> "heeft bestandslocatie"@nl .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# http://www.w3.org/2004/02/skos/core#Concept
+<http://www.w3.org/2004/02/skos/core#Concept> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://marijnjanssensteenberg.github.io/rii#Copy
+<https://marijnjanssensteenberg.github.io/rii#Copy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://marijnjanssensteenberg.github.io/rii#Copy> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://marijnjanssensteenberg.github.io/rii#Reconstruction> .
+<https://marijnjanssensteenberg.github.io/rii#Copy> <http://www.w3.org/2000/01/rdf-schema#comment> "Zelfde vorm, zelfde (gelijksoortig) materiaal, zelfde verbindingstechniek"@nl .
+<https://marijnjanssensteenberg.github.io/rii#Copy> <http://www.w3.org/2000/01/rdf-schema#label> "Ladder step 3a: Copy"@en .
+<https://marijnjanssensteenberg.github.io/rii#Copy> <http://www.w3.org/2000/01/rdf-schema#label> "Laddertrede 3a: Kopiëren"@nl .
+# 
+# https://marijnjanssensteenberg.github.io/rii#Dimension
+<https://marijnjanssensteenberg.github.io/rii#Dimension> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://marijnjanssensteenberg.github.io/rii#Dimension> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://marijnjanssensteenberg.github.io/rii#ElementProperty> .
+<https://marijnjanssensteenberg.github.io/rii#Dimension> <http://www.w3.org/2000/01/rdf-schema#label> "Afmeting"@nl .
+<https://marijnjanssensteenberg.github.io/rii#Dimension> <http://www.w3.org/2000/01/rdf-schema#label> "Dimension"@en .
+# 
+# https://marijnjanssensteenberg.github.io/rii#ElementProperty
+<https://marijnjanssensteenberg.github.io/rii#ElementProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://marijnjanssensteenberg.github.io/rii#ElementProperty> <http://www.w3.org/2000/01/rdf-schema#label> "Element Eigenschap"@nl .
+<https://marijnjanssensteenberg.github.io/rii#ElementProperty> <http://www.w3.org/2000/01/rdf-schema#label> "Element Property"@en .
+# 
+# https://marijnjanssensteenberg.github.io/rii#ExternalImage
+<https://marijnjanssensteenberg.github.io/rii#ExternalImage> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://marijnjanssensteenberg.github.io/rii#ExternalImage> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://marijnjanssensteenberg.github.io/rii#ExternalResource> .
+<https://marijnjanssensteenberg.github.io/rii#ExternalImage> <http://www.w3.org/2000/01/rdf-schema#label> "External Image"@en .
+<https://marijnjanssensteenberg.github.io/rii#ExternalImage> <http://www.w3.org/2000/01/rdf-schema#label> "Externe Afbeelding"@nl .
+# 
+# https://marijnjanssensteenberg.github.io/rii#ExternalResource
+<https://marijnjanssensteenberg.github.io/rii#ExternalResource> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://marijnjanssensteenberg.github.io/rii#ExternalResource> <http://www.w3.org/2000/01/rdf-schema#label> "External Resource"@en .
+<https://marijnjanssensteenberg.github.io/rii#ExternalResource> <http://www.w3.org/2000/01/rdf-schema#label> "Externe Bron"@nl .
+# 
+# https://marijnjanssensteenberg.github.io/rii#Imitation
+<https://marijnjanssensteenberg.github.io/rii#Imitation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://marijnjanssensteenberg.github.io/rii#Imitation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://marijnjanssensteenberg.github.io/rii#Reconstruction> .
+<https://marijnjanssensteenberg.github.io/rii#Imitation> <http://www.w3.org/2000/01/rdf-schema#comment> "Zelfde vorm, ander materiaal en/of andere verbindingstechniek"@nl .
+<https://marijnjanssensteenberg.github.io/rii#Imitation> <http://www.w3.org/2000/01/rdf-schema#label> "Ladder step 3b: Imitation"@en .
+<https://marijnjanssensteenberg.github.io/rii#Imitation> <http://www.w3.org/2000/01/rdf-schema#label> "Laddertrede 3b: Imiteren"@nl .
+# 
+# https://marijnjanssensteenberg.github.io/rii#Improvement
+<https://marijnjanssensteenberg.github.io/rii#Improvement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://marijnjanssensteenberg.github.io/rii#Improvement> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://marijnjanssensteenberg.github.io/rii#Reconstruction> .
+<https://marijnjanssensteenberg.github.io/rii#Improvement> <http://www.w3.org/2000/01/rdf-schema#comment> "Verbeteren prestatie; oorspronkelijke of aangepaste vorm, ander materiaal en/of andere verbindingstechniek."@nl .
+<https://marijnjanssensteenberg.github.io/rii#Improvement> <http://www.w3.org/2000/01/rdf-schema#label> "Ladder step 3c: Improvement"@en .
+<https://marijnjanssensteenberg.github.io/rii#Improvement> <http://www.w3.org/2000/01/rdf-schema#label> "Laddertrede 3c: Verbeteren"@nl .
+# 
+# https://marijnjanssensteenberg.github.io/rii#Intervention
+<https://marijnjanssensteenberg.github.io/rii#Intervention> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://marijnjanssensteenberg.github.io/rii#Intervention> <http://www.w3.org/2000/01/rdf-schema#label> "Interventie"@nl .
+<https://marijnjanssensteenberg.github.io/rii#Intervention> <http://www.w3.org/2000/01/rdf-schema#label> "Intervention"@en .
+# 
+# https://marijnjanssensteenberg.github.io/rii#Length
+<https://marijnjanssensteenberg.github.io/rii#Length> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://marijnjanssensteenberg.github.io/rii#Length> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://marijnjanssensteenberg.github.io/rii#Dimension> .
+<https://marijnjanssensteenberg.github.io/rii#Length> <http://www.w3.org/2000/01/rdf-schema#label> "Lengte"@nl .
+<https://marijnjanssensteenberg.github.io/rii#Length> <http://www.w3.org/2000/01/rdf-schema#label> "Length"@en .
+# 
+# https://marijnjanssensteenberg.github.io/rii#Location
+<https://marijnjanssensteenberg.github.io/rii#Location> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://marijnjanssensteenberg.github.io/rii#Location> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://marijnjanssensteenberg.github.io/rii#ElementProperty> .
+<https://marijnjanssensteenberg.github.io/rii#Location> <http://www.w3.org/2000/01/rdf-schema#label> "Locatie"@nl .
+<https://marijnjanssensteenberg.github.io/rii#Location> <http://www.w3.org/2000/01/rdf-schema#label> "Location"@en .
+# 
+# https://marijnjanssensteenberg.github.io/rii#Material
+<https://marijnjanssensteenberg.github.io/rii#Material> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://marijnjanssensteenberg.github.io/rii#Material> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://marijnjanssensteenberg.github.io/rii#ElementProperty> .
+<https://marijnjanssensteenberg.github.io/rii#Material> <http://www.w3.org/2000/01/rdf-schema#label> "Materiaal"@nl .
+<https://marijnjanssensteenberg.github.io/rii#Material> <http://www.w3.org/2000/01/rdf-schema#label> "Material"@en .
+# 
+# https://marijnjanssensteenberg.github.io/rii#PhysicalTag
+<https://marijnjanssensteenberg.github.io/rii#PhysicalTag> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://marijnjanssensteenberg.github.io/rii#PhysicalTag> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://marijnjanssensteenberg.github.io/rii#ElementProperty> .
+<https://marijnjanssensteenberg.github.io/rii#PhysicalTag> <http://www.w3.org/2000/01/rdf-schema#label> "Fysiek Merk"@nl .
+<https://marijnjanssensteenberg.github.io/rii#PhysicalTag> <http://www.w3.org/2000/01/rdf-schema#label> "Physical Tag"@en .
+# 
+# https://marijnjanssensteenberg.github.io/rii#Preservation
+<https://marijnjanssensteenberg.github.io/rii#Preservation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://marijnjanssensteenberg.github.io/rii#Preservation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://marijnjanssensteenberg.github.io/rii#Intervention> .
+<https://marijnjanssensteenberg.github.io/rii#Preservation> <http://www.w3.org/2000/01/rdf-schema#comment> "De bestaande situatie blijft dan zoveel mogelijk intact. Eventuele ingrepen dienen alleen om het verval te stoppen of verdere aantastingen te voorkomen, zoals reinigen of het aanbrengen van beschermende middelen."@nl .
+<https://marijnjanssensteenberg.github.io/rii#Preservation> <http://www.w3.org/2000/01/rdf-schema#label> "Ladder step 1: Preservation"@en .
+<https://marijnjanssensteenberg.github.io/rii#Preservation> <http://www.w3.org/2000/01/rdf-schema#label> "Laddertrede 1: Conserveren"@nl .
+# 
+# https://marijnjanssensteenberg.github.io/rii#Reconstruction
+<https://marijnjanssensteenberg.github.io/rii#Reconstruction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://marijnjanssensteenberg.github.io/rii#Reconstruction> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://marijnjanssensteenberg.github.io/rii#Intervention> .
+<https://marijnjanssensteenberg.github.io/rii#Reconstruction> <http://www.w3.org/2000/01/rdf-schema#comment> "Bij onderdelen die ook niet meer kunnen worden gerepareerd, zit er maar één ding op: vernieuwen of vervangen. U heeft hierbij 3 opties (aflopend in voorkeur):"@nl .
+<https://marijnjanssensteenberg.github.io/rii#Reconstruction> <http://www.w3.org/2000/01/rdf-schema#label> "Ladder step 3: Reconstruction"@en .
+<https://marijnjanssensteenberg.github.io/rii#Reconstruction> <http://www.w3.org/2000/01/rdf-schema#label> "Laddertrede 3: Vernieuwen"@nl .
+# 
+# https://marijnjanssensteenberg.github.io/rii#Repair
+<https://marijnjanssensteenberg.github.io/rii#Repair> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://marijnjanssensteenberg.github.io/rii#Repair> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://marijnjanssensteenberg.github.io/rii#Intervention> .
+<https://marijnjanssensteenberg.github.io/rii#Repair> <http://www.w3.org/2000/01/rdf-schema#comment> "Als conserveren alleen niet meer volstaat, kunnen beschadigde onderdelen worden gerepareerd. Let wel goed op dat niet meer materiaal wordt vervangen of toegevoegd dan strikt nodig is. Voorbeelden van reparaties zijn het repareren van beschadigde stenen of het plaatselijk vernieuwen van voegwerk."@nl .
+<https://marijnjanssensteenberg.github.io/rii#Repair> <http://www.w3.org/2000/01/rdf-schema#label> "Ladder step 2: Repair"@en .
+<https://marijnjanssensteenberg.github.io/rii#Repair> <http://www.w3.org/2000/01/rdf-schema#label> "Laddertrede 2: Repareren"@nl .
+# 
+# https://marijnjanssensteenberg.github.io/rii#Shape
+<https://marijnjanssensteenberg.github.io/rii#Shape> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://marijnjanssensteenberg.github.io/rii#Shape> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://marijnjanssensteenberg.github.io/rii#ElementProperty> .
+<https://marijnjanssensteenberg.github.io/rii#Shape> <http://www.w3.org/2000/01/rdf-schema#label> "Shape"@en .
+<https://marijnjanssensteenberg.github.io/rii#Shape> <http://www.w3.org/2000/01/rdf-schema#label> "Vorm"@nl .
+# 
+# https://marijnjanssensteenberg.github.io/rii#Thickness
+<https://marijnjanssensteenberg.github.io/rii#Thickness> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://marijnjanssensteenberg.github.io/rii#Thickness> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://marijnjanssensteenberg.github.io/rii#Dimension> .
+<https://marijnjanssensteenberg.github.io/rii#Thickness> <http://www.w3.org/2000/01/rdf-schema#label> "Dikte"@nl .
+<https://marijnjanssensteenberg.github.io/rii#Thickness> <http://www.w3.org/2000/01/rdf-schema#label> "Thickness"@en .
+# 
+# https://marijnjanssensteenberg.github.io/rii#Width
+<https://marijnjanssensteenberg.github.io/rii#Width> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://marijnjanssensteenberg.github.io/rii#Width> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://marijnjanssensteenberg.github.io/rii#Dimension> .
+<https://marijnjanssensteenberg.github.io/rii#Width> <http://www.w3.org/2000/01/rdf-schema#label> "Breedte"@nl .
+<https://marijnjanssensteenberg.github.io/rii#Width> <http://www.w3.org/2000/01/rdf-schema#label> "Width"@en .
+# 
+# https://w3id.org/bot#Element
+<https://w3id.org/bot#Element> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://w3id.org/cto#Task
+<https://w3id.org/cto#Task> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://w3id.org/cto#TaskContext
+<https://w3id.org/cto#TaskContext> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/

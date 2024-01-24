@@ -1,0 +1,365 @@
+@prefix : <https://marijnjanssensteenberg.github.io/rii#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <https://marijnjanssensteenberg.github.io/rii#> .
+
+<https://marijnjanssensteenberg.github.io/rii#> rdf:type owl:Ontology ;
+                                                 <http://purl.org/dc/terms/issued> "2023-04-20T12:00:00"^^xsd:dateTime ;
+                                                 <http://purl.org/dc/terms/license> <https://creativecommons.org/licenses/by/1.0/> ;
+                                                 <http://purl.org/dc/terms/title> "RII: Restoration Intervention and Inspection Ontology" ;
+                                                 <http://purl.org/vocab/vann/preferredNamespacePrefix> "rii" ;
+                                                 owl:versionInfo "0.0.1" .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://purl.org/dc/terms/creator
+<http://purl.org/dc/terms/creator> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/issued
+<http://purl.org/dc/terms/issued> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/license
+<http://purl.org/dc/terms/license> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/modified
+<http://purl.org/dc/terms/modified> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/title
+<http://purl.org/dc/terms/title> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/vocab/vann/preferredNamespacePrefix
+<http://purl.org/vocab/vann/preferredNamespacePrefix> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/vocab/vann/preferredNamespaceUri
+<http://purl.org/vocab/vann/preferredNamespaceUri> rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  https://marijnjanssensteenberg.github.io/rii#capturedDuringTask
+:capturedDuringTask rdf:type owl:ObjectProperty ;
+                    owl:inverseOf :capturedInformation ;
+                    rdfs:range <https://w3id.org/cto#Task> ;
+                    rdfs:label "captured during task"@en ,
+                               "vastgelegd tijdens taak"@nl .
+
+
+###  https://marijnjanssensteenberg.github.io/rii#capturedInformation
+:capturedInformation rdf:type owl:ObjectProperty ;
+                     rdfs:label "captured information"@en ,
+                                "vastgelegde informatie"@nl .
+
+
+###  https://marijnjanssensteenberg.github.io/rii#capturedResource
+:capturedResource rdf:type owl:ObjectProperty ;
+                  rdfs:subPropertyOf :capturedInformation ;
+                  owl:inverseOf :resourceCapturedDuringTask ;
+                  rdfs:label "captured external resource"@en ,
+                             "vastgelegde externe bron"@nl .
+
+
+###  https://marijnjanssensteenberg.github.io/rii#chosenIntervention
+:chosenIntervention rdf:type owl:ObjectProperty ;
+                    rdfs:range :Intervention ;
+                    rdfs:label "chosen intervention"@en ,
+                               "gekozen interventie"@nl .
+
+
+###  https://marijnjanssensteenberg.github.io/rii#coveredByIntervention
+:coveredByIntervention rdf:type owl:ObjectProperty ;
+                       rdfs:range :Intervention ;
+                       rdfs:label "behandeld door interventie"@nl ,
+                                  "covered by intervention"@en .
+
+
+###  https://marijnjanssensteenberg.github.io/rii#describesElement
+:describesElement rdf:type owl:ObjectProperty ;
+                  owl:inverseOf :hasDescriptionInResource ;
+                  rdfs:domain :ExternalResource ;
+                  rdfs:range <https://w3id.org/bot#Element> ;
+                  rdfs:label "beschrijft element"@nl ,
+                             "describes element"@en .
+
+
+###  https://marijnjanssensteenberg.github.io/rii#hasDescriptionInResource
+:hasDescriptionInResource rdf:type owl:ObjectProperty ;
+                          owl:propertyChainAxiom ( <https://w3id.org/cto#isSubjectOfTask>
+                                                   :capturedResource
+                                                 ) ;
+                          rdfs:label "has description in resource"@en ,
+                                     "wordt beschreven in externe bron"@nl .
+
+
+###  https://marijnjanssensteenberg.github.io/rii#hasDimension
+:hasDimension rdf:type owl:ObjectProperty ;
+              rdfs:subPropertyOf :hasElementProperty ;
+              rdfs:range :Dimension ;
+              rdfs:label "has dimension"@en ,
+                         "heeft afmeting"@nl .
+
+
+###  https://marijnjanssensteenberg.github.io/rii#hasElementProperty
+:hasElementProperty rdf:type owl:ObjectProperty ;
+                    rdfs:range :ElementProperty ;
+                    rdfs:label "has element property"@en ,
+                               "heeft elementproperty"@nl .
+
+
+###  https://marijnjanssensteenberg.github.io/rii#hasLength
+:hasLength rdf:type owl:ObjectProperty ;
+           rdfs:subPropertyOf :hasDimension ;
+           rdfs:range :Length ;
+           rdfs:label "has length"@en ,
+                      "heeft lengte"@nl .
+
+
+###  https://marijnjanssensteenberg.github.io/rii#hasLocation
+:hasLocation rdf:type owl:ObjectProperty ;
+             rdfs:subPropertyOf :hasElementProperty ;
+             rdfs:range :Location ;
+             rdfs:label "has location"@en ,
+                        "heeft locatie"@nl .
+
+
+###  https://marijnjanssensteenberg.github.io/rii#hasMaterial
+:hasMaterial rdf:type owl:ObjectProperty ;
+             rdfs:subPropertyOf :hasElementProperty ;
+             rdfs:range :Material ;
+             rdfs:label "has material"@en ,
+                        "heeft materiaal"@nl .
+
+
+###  https://marijnjanssensteenberg.github.io/rii#hasPhysicalTag
+:hasPhysicalTag rdf:type owl:ObjectProperty ;
+                rdfs:subPropertyOf :hasElementProperty ;
+                rdfs:range :PhysicalTag ;
+                rdfs:label "has physical tag"@en ,
+                           "heeft fysiek merk"@nl .
+
+
+###  https://marijnjanssensteenberg.github.io/rii#hasShape
+:hasShape rdf:type owl:ObjectProperty ;
+          rdfs:subPropertyOf :hasElementProperty ;
+          rdfs:range :Shape ;
+          rdfs:label "has shape"@en ,
+                     "heeft vorm"@nl .
+
+
+###  https://marijnjanssensteenberg.github.io/rii#hasThickness
+:hasThickness rdf:type owl:ObjectProperty ;
+              rdfs:subPropertyOf :hasDimension ;
+              rdfs:range :Thickness ;
+              rdfs:label "has thickness"@en ,
+                         "heeft dikte"@nl .
+
+
+###  https://marijnjanssensteenberg.github.io/rii#hasWidth
+:hasWidth rdf:type owl:ObjectProperty ;
+          rdfs:subPropertyOf :hasDimension ;
+          rdfs:range :Width ;
+          rdfs:label "has width"@en ,
+                     "heeft breedte"@nl .
+
+
+###  https://marijnjanssensteenberg.github.io/rii#replacesElement
+:replacesElement rdf:type owl:ObjectProperty ;
+                 rdfs:domain <https://w3id.org/bot#Element> ;
+                 rdfs:range <https://w3id.org/bot#Element> ;
+                 rdfs:label "replaces element"@en ,
+                            "vervangt element"@nl .
+
+
+###  https://marijnjanssensteenberg.github.io/rii#resourceCapturedDuringTask
+:resourceCapturedDuringTask rdf:type owl:ObjectProperty ;
+                            rdfs:subPropertyOf :capturedDuringTask ;
+                            rdfs:domain :ExternalResource ;
+                            rdfs:label "captured during task (external resource)"@en ,
+                                       "vastgelegd tijdens taak (externe bron)"@nl .
+
+
+###  https://marijnjanssensteenberg.github.io/rii#seeAlsoThesaurusConcept
+:seeAlsoThesaurusConcept rdf:type owl:ObjectProperty ;
+                         rdfs:range <http://www.w3.org/2004/02/skos/core#Concept> ;
+                         rdfs:label "see also thesaurus concept"@en ,
+                                    "zie ook thesaurus concept"@nl .
+
+
+###  https://w3id.org/cto#isSubjectOfTask
+<https://w3id.org/cto#isSubjectOfTask> rdf:type owl:ObjectProperty ;
+                                       rdfs:subPropertyOf owl:topObjectProperty .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  https://marijnjanssensteenberg.github.io/rii#filePath
+:filePath rdf:type owl:DatatypeProperty ;
+          rdfs:range xsd:anyURI ;
+          rdfs:label "file path"@en ,
+                     "heeft bestandslocatie"@nl .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://www.w3.org/2004/02/skos/core#Concept
+<http://www.w3.org/2004/02/skos/core#Concept> rdf:type owl:Class .
+
+
+###  https://marijnjanssensteenberg.github.io/rii#Copy
+:Copy rdf:type owl:Class ;
+      rdfs:subClassOf :Reconstruction ;
+      rdfs:comment "Zelfde vorm, zelfde (gelijksoortig) materiaal, zelfde verbindingstechniek"@nl ;
+      rdfs:label "Ladder step 3a: Copy"@en ,
+                 "Laddertrede 3a: Kopiëren"@nl .
+
+
+###  https://marijnjanssensteenberg.github.io/rii#Dimension
+:Dimension rdf:type owl:Class ;
+           rdfs:subClassOf :ElementProperty ;
+           rdfs:label "Afmeting"@nl ,
+                      "Dimension"@en .
+
+
+###  https://marijnjanssensteenberg.github.io/rii#ElementProperty
+:ElementProperty rdf:type owl:Class ;
+                 rdfs:label "Element Eigenschap"@nl ,
+                            "Element Property"@en .
+
+
+###  https://marijnjanssensteenberg.github.io/rii#ExternalImage
+:ExternalImage rdf:type owl:Class ;
+               rdfs:subClassOf :ExternalResource ;
+               rdfs:label "External Image"@en ,
+                          "Externe Afbeelding"@nl .
+
+
+###  https://marijnjanssensteenberg.github.io/rii#ExternalResource
+:ExternalResource rdf:type owl:Class ;
+                  rdfs:label "External Resource"@en ,
+                             "Externe Bron"@nl .
+
+
+###  https://marijnjanssensteenberg.github.io/rii#Imitation
+:Imitation rdf:type owl:Class ;
+           rdfs:subClassOf :Reconstruction ;
+           rdfs:comment "Zelfde vorm, ander materiaal en/of andere verbindingstechniek"@nl ;
+           rdfs:label "Ladder step 3b: Imitation"@en ,
+                      "Laddertrede 3b: Imiteren"@nl .
+
+
+###  https://marijnjanssensteenberg.github.io/rii#Improvement
+:Improvement rdf:type owl:Class ;
+             rdfs:subClassOf :Reconstruction ;
+             rdfs:comment "Verbeteren prestatie; oorspronkelijke of aangepaste vorm, ander materiaal en/of andere verbindingstechniek."@nl ;
+             rdfs:label "Ladder step 3c: Improvement"@en ,
+                        "Laddertrede 3c: Verbeteren"@nl .
+
+
+###  https://marijnjanssensteenberg.github.io/rii#Intervention
+:Intervention rdf:type owl:Class ;
+              rdfs:label "Interventie"@nl ,
+                         "Intervention"@en .
+
+
+###  https://marijnjanssensteenberg.github.io/rii#Length
+:Length rdf:type owl:Class ;
+        rdfs:subClassOf :Dimension ;
+        rdfs:label "Lengte"@nl ,
+                   "Length"@en .
+
+
+###  https://marijnjanssensteenberg.github.io/rii#Location
+:Location rdf:type owl:Class ;
+          rdfs:subClassOf :ElementProperty ;
+          rdfs:label "Locatie"@nl ,
+                     "Location"@en .
+
+
+###  https://marijnjanssensteenberg.github.io/rii#Material
+:Material rdf:type owl:Class ;
+          rdfs:subClassOf :ElementProperty ;
+          rdfs:label "Materiaal"@nl ,
+                     "Material"@en .
+
+
+###  https://marijnjanssensteenberg.github.io/rii#PhysicalTag
+:PhysicalTag rdf:type owl:Class ;
+             rdfs:subClassOf :ElementProperty ;
+             rdfs:label "Fysiek Merk"@nl ,
+                        "Physical Tag"@en .
+
+
+###  https://marijnjanssensteenberg.github.io/rii#Preservation
+:Preservation rdf:type owl:Class ;
+              rdfs:subClassOf :Intervention ;
+              rdfs:comment "De bestaande situatie blijft dan zoveel mogelijk intact. Eventuele ingrepen dienen alleen om het verval te stoppen of verdere aantastingen te voorkomen, zoals reinigen of het aanbrengen van beschermende middelen."@nl ;
+              rdfs:label "Ladder step 1: Preservation"@en ,
+                         "Laddertrede 1: Conserveren"@nl .
+
+
+###  https://marijnjanssensteenberg.github.io/rii#Reconstruction
+:Reconstruction rdf:type owl:Class ;
+                rdfs:subClassOf :Intervention ;
+                rdfs:comment "Bij onderdelen die ook niet meer kunnen worden gerepareerd, zit er maar één ding op: vernieuwen of vervangen. U heeft hierbij 3 opties (aflopend in voorkeur):"@nl ;
+                rdfs:label "Ladder step 3: Reconstruction"@en ,
+                           "Laddertrede 3: Vernieuwen"@nl .
+
+
+###  https://marijnjanssensteenberg.github.io/rii#Repair
+:Repair rdf:type owl:Class ;
+        rdfs:subClassOf :Intervention ;
+        rdfs:comment "Als conserveren alleen niet meer volstaat, kunnen beschadigde onderdelen worden gerepareerd. Let wel goed op dat niet meer materiaal wordt vervangen of toegevoegd dan strikt nodig is. Voorbeelden van reparaties zijn het repareren van beschadigde stenen of het plaatselijk vernieuwen van voegwerk."@nl ;
+        rdfs:label "Ladder step 2: Repair"@en ,
+                   "Laddertrede 2: Repareren"@nl .
+
+
+###  https://marijnjanssensteenberg.github.io/rii#Shape
+:Shape rdf:type owl:Class ;
+       rdfs:subClassOf :ElementProperty ;
+       rdfs:label "Shape"@en ,
+                  "Vorm"@nl .
+
+
+###  https://marijnjanssensteenberg.github.io/rii#Thickness
+:Thickness rdf:type owl:Class ;
+           rdfs:subClassOf :Dimension ;
+           rdfs:label "Dikte"@nl ,
+                      "Thickness"@en .
+
+
+###  https://marijnjanssensteenberg.github.io/rii#Width
+:Width rdf:type owl:Class ;
+       rdfs:subClassOf :Dimension ;
+       rdfs:label "Breedte"@nl ,
+                  "Width"@en .
+
+
+###  https://w3id.org/bot#Element
+<https://w3id.org/bot#Element> rdf:type owl:Class .
+
+
+###  https://w3id.org/cto#Task
+<https://w3id.org/cto#Task> rdf:type owl:Class .
+
+
+###  https://w3id.org/cto#TaskContext
+<https://w3id.org/cto#TaskContext> rdf:type owl:Class .
+
+
+###  Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/

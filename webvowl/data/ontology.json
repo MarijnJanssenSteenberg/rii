@@ -1,0 +1,974 @@
+{
+  "_comment" : "Created with OWL2VOWL (version 0.3.5), http://vowl.visualdataweb.org",
+  "header" : {
+    "languages" : [ "en", "nl", "undefined" ],
+    "baseIris" : [ "https://w3id.org/bot", "http://www.w3.org/1999/02/22-rdf-syntax-ns", "http://www.w3.org/2002/07/owl", "http://www.w3.org/2000/01/rdf-schema", "https://marijnjanssensteenberg.github.io/rii", "http://www.w3.org/2001/XMLSchema", "http://www.w3.org/2004/02/skos/core", "https://w3id.org/cto" ],
+    "title" : {
+      "undefined" : "RII: Restoration Intervention and Inspection Ontology"
+    },
+    "iri" : "https://marijnjanssensteenberg.github.io/rii#",
+    "version" : "0.0.1",
+    "other" : {
+      "license" : [ {
+        "identifier" : "license",
+        "language" : "undefined",
+        "value" : "https://creativecommons.org/licenses/by/1.0/",
+        "type" : "iri"
+      } ],
+      "preferredNamespacePrefix" : [ {
+        "identifier" : "preferredNamespacePrefix",
+        "language" : "undefined",
+        "value" : "rii",
+        "type" : "label"
+      } ],
+      "versionInfo" : [ {
+        "identifier" : "versionInfo",
+        "language" : "undefined",
+        "value" : "0.0.1",
+        "type" : "label"
+      } ],
+      "title" : [ {
+        "identifier" : "title",
+        "language" : "undefined",
+        "value" : "RII: Restoration Intervention and Inspection Ontology",
+        "type" : "label"
+      } ],
+      "issued" : [ {
+        "identifier" : "issued",
+        "language" : "undefined",
+        "value" : "2023-04-20T12:00:00",
+        "type" : "label"
+      } ]
+    }
+  },
+  "namespace" : [ ],
+  "class" : [ {
+    "id" : "7",
+    "type" : "owl:Class"
+  }, {
+    "id" : "9",
+    "type" : "owl:Class"
+  }, {
+    "id" : "10",
+    "type" : "owl:Class"
+  }, {
+    "id" : "11",
+    "type" : "owl:Class"
+  }, {
+    "id" : "13",
+    "type" : "owl:Class"
+  }, {
+    "id" : "45",
+    "type" : "owl:Class"
+  }, {
+    "id" : "61",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "64",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "60",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "15",
+    "type" : "owl:Class"
+  }, {
+    "id" : "56",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "39",
+    "type" : "owl:Class"
+  }, {
+    "id" : "30",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "1",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "31",
+    "type" : "owl:Class"
+  }, {
+    "id" : "44",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "47",
+    "type" : "owl:Class"
+  }, {
+    "id" : "53",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "18",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "48",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "70",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "14",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "2",
+    "type" : "owl:Class"
+  }, {
+    "id" : "37",
+    "type" : "owl:Class"
+  }, {
+    "id" : "68",
+    "type" : "owl:Class"
+  }, {
+    "id" : "28",
+    "type" : "owl:Class"
+  }, {
+    "id" : "71",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "55",
+    "type" : "owl:Class"
+  }, {
+    "id" : "41",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "23",
+    "type" : "owl:Class"
+  }, {
+    "id" : "51",
+    "type" : "owl:Class"
+  }, {
+    "id" : "8",
+    "type" : "owl:Class"
+  }, {
+    "id" : "46",
+    "type" : "owl:Class"
+  }, {
+    "id" : "12",
+    "type" : "owl:Class"
+  }, {
+    "id" : "21",
+    "type" : "owl:Class"
+  }, {
+    "id" : "26",
+    "type" : "owl:Class"
+  } ],
+  "classAttribute" : [ {
+    "iri" : "https://marijnjanssensteenberg.github.io/rii#PhysicalTag",
+    "baseIri" : "https://marijnjanssensteenberg.github.io/rii",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "PhysicalTag",
+      "en" : "Physical Tag",
+      "nl" : "Fysiek Merk"
+    },
+    "id" : "7",
+    "superClasses" : [ "8" ]
+  }, {
+    "iri" : "https://marijnjanssensteenberg.github.io/rii#Thickness",
+    "baseIri" : "https://marijnjanssensteenberg.github.io/rii",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Thickness",
+      "en" : "Thickness",
+      "nl" : "Dikte"
+    },
+    "id" : "9",
+    "superClasses" : [ "2" ]
+  }, {
+    "iri" : "http://www.w3.org/2004/02/skos/core#Concept",
+    "baseIri" : "http://www.w3.org/2004/02/skos/core",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Concept"
+    },
+    "attributes" : [ "external" ],
+    "id" : "10"
+  }, {
+    "iri" : "https://marijnjanssensteenberg.github.io/rii#Copy",
+    "baseIri" : "https://marijnjanssensteenberg.github.io/rii",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Copy",
+      "en" : "Ladder step 3a: Copy",
+      "nl" : "Laddertrede 3a: Kopiëren"
+    },
+    "comment" : {
+      "nl" : "Zelfde vorm, zelfde (gelijksoortig) materiaal, zelfde verbindingstechniek"
+    },
+    "id" : "11",
+    "superClasses" : [ "12" ]
+  }, {
+    "iri" : "https://w3id.org/cto#TaskContext",
+    "baseIri" : "https://w3id.org/cto",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "TaskContext"
+    },
+    "attributes" : [ "external" ],
+    "id" : "13"
+  }, {
+    "iri" : "https://marijnjanssensteenberg.github.io/rii#Intervention",
+    "baseIri" : "https://marijnjanssensteenberg.github.io/rii",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Intervention",
+      "en" : "Intervention",
+      "nl" : "Interventie"
+    },
+    "subClasses" : [ "46", "12", "47" ],
+    "id" : "45"
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "61",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "64",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "60",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "https://marijnjanssensteenberg.github.io/rii#Width",
+    "baseIri" : "https://marijnjanssensteenberg.github.io/rii",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Width",
+      "en" : "Width",
+      "nl" : "Breedte"
+    },
+    "id" : "15",
+    "superClasses" : [ "2" ]
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "56",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "https://marijnjanssensteenberg.github.io/rii#Location",
+    "baseIri" : "https://marijnjanssensteenberg.github.io/rii",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Location",
+      "en" : "Location",
+      "nl" : "Locatie"
+    },
+    "id" : "39",
+    "superClasses" : [ "8" ]
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "30",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "1",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "https://marijnjanssensteenberg.github.io/rii#ExternalResource",
+    "baseIri" : "https://marijnjanssensteenberg.github.io/rii",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ExternalResource",
+      "en" : "External Resource",
+      "nl" : "Externe Bron"
+    },
+    "subClasses" : [ "51" ],
+    "id" : "31"
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "44",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "https://marijnjanssensteenberg.github.io/rii#Preservation",
+    "baseIri" : "https://marijnjanssensteenberg.github.io/rii",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Preservation",
+      "en" : "Ladder step 1: Preservation",
+      "nl" : "Laddertrede 1: Conserveren"
+    },
+    "comment" : {
+      "nl" : "De bestaande situatie blijft dan zoveel mogelijk intact. Eventuele ingrepen dienen alleen om het verval te stoppen of verdere aantastingen te voorkomen, zoals reinigen of het aanbrengen van beschermende middelen."
+    },
+    "id" : "47",
+    "superClasses" : [ "45" ]
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "53",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "18",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "48",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "70",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "14",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "https://marijnjanssensteenberg.github.io/rii#Dimension",
+    "baseIri" : "https://marijnjanssensteenberg.github.io/rii",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Dimension",
+      "en" : "Dimension",
+      "nl" : "Afmeting"
+    },
+    "subClasses" : [ "9", "55", "15" ],
+    "id" : "2",
+    "superClasses" : [ "8" ]
+  }, {
+    "iri" : "https://marijnjanssensteenberg.github.io/rii#Material",
+    "baseIri" : "https://marijnjanssensteenberg.github.io/rii",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Material",
+      "en" : "Material",
+      "nl" : "Materiaal"
+    },
+    "id" : "37",
+    "superClasses" : [ "8" ]
+  }, {
+    "iri" : "https://w3id.org/cto#Task",
+    "baseIri" : "https://w3id.org/cto",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Task"
+    },
+    "attributes" : [ "external" ],
+    "id" : "68"
+  }, {
+    "iri" : "https://marijnjanssensteenberg.github.io/rii#Imitation",
+    "baseIri" : "https://marijnjanssensteenberg.github.io/rii",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Imitation",
+      "en" : "Ladder step 3b: Imitation",
+      "nl" : "Laddertrede 3b: Imiteren"
+    },
+    "comment" : {
+      "nl" : "Zelfde vorm, ander materiaal en/of andere verbindingstechniek"
+    },
+    "id" : "28",
+    "superClasses" : [ "12" ]
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#anyURI",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "71",
+    "label" : {
+      "IRI-based" : "anyURI"
+    }
+  }, {
+    "iri" : "https://marijnjanssensteenberg.github.io/rii#Length",
+    "baseIri" : "https://marijnjanssensteenberg.github.io/rii",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Length",
+      "en" : "Length",
+      "nl" : "Lengte"
+    },
+    "id" : "55",
+    "superClasses" : [ "2" ]
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "41",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "https://marijnjanssensteenberg.github.io/rii#Shape",
+    "baseIri" : "https://marijnjanssensteenberg.github.io/rii",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Shape",
+      "en" : "Shape",
+      "nl" : "Vorm"
+    },
+    "id" : "23",
+    "superClasses" : [ "8" ]
+  }, {
+    "iri" : "https://marijnjanssensteenberg.github.io/rii#ExternalImage",
+    "baseIri" : "https://marijnjanssensteenberg.github.io/rii",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ExternalImage",
+      "en" : "External Image",
+      "nl" : "Externe Afbeelding"
+    },
+    "id" : "51",
+    "superClasses" : [ "31" ]
+  }, {
+    "iri" : "https://marijnjanssensteenberg.github.io/rii#ElementProperty",
+    "baseIri" : "https://marijnjanssensteenberg.github.io/rii",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ElementProperty",
+      "en" : "Element Property",
+      "nl" : "Element Eigenschap"
+    },
+    "subClasses" : [ "2", "39", "37", "7", "23" ],
+    "id" : "8"
+  }, {
+    "iri" : "https://marijnjanssensteenberg.github.io/rii#Repair",
+    "baseIri" : "https://marijnjanssensteenberg.github.io/rii",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Repair",
+      "en" : "Ladder step 2: Repair",
+      "nl" : "Laddertrede 2: Repareren"
+    },
+    "comment" : {
+      "nl" : "Als conserveren alleen niet meer volstaat, kunnen beschadigde onderdelen worden gerepareerd. Let wel goed op dat niet meer materiaal wordt vervangen of toegevoegd dan strikt nodig is. Voorbeelden van reparaties zijn het repareren van beschadigde stenen of het plaatselijk vernieuwen van voegwerk."
+    },
+    "id" : "46",
+    "superClasses" : [ "45" ]
+  }, {
+    "iri" : "https://marijnjanssensteenberg.github.io/rii#Reconstruction",
+    "baseIri" : "https://marijnjanssensteenberg.github.io/rii",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Reconstruction",
+      "en" : "Ladder step 3: Reconstruction",
+      "nl" : "Laddertrede 3: Vernieuwen"
+    },
+    "subClasses" : [ "28", "26", "11" ],
+    "comment" : {
+      "nl" : "Bij onderdelen die ook niet meer kunnen worden gerepareerd, zit er maar één ding op: vernieuwen of vervangen. U heeft hierbij 3 opties (aflopend in voorkeur):"
+    },
+    "id" : "12",
+    "superClasses" : [ "45" ]
+  }, {
+    "iri" : "https://w3id.org/bot#Element",
+    "baseIri" : "https://w3id.org/bot",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Element"
+    },
+    "attributes" : [ "external" ],
+    "id" : "21"
+  }, {
+    "iri" : "https://marijnjanssensteenberg.github.io/rii#Improvement",
+    "baseIri" : "https://marijnjanssensteenberg.github.io/rii",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Improvement",
+      "en" : "Ladder step 3c: Improvement",
+      "nl" : "Laddertrede 3c: Verbeteren"
+    },
+    "comment" : {
+      "nl" : "Verbeteren prestatie; oorspronkelijke of aangepaste vorm, ander materiaal en/of andere verbindingstechniek."
+    },
+    "id" : "26",
+    "superClasses" : [ "12" ]
+  } ],
+  "property" : [ {
+    "id" : "0",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "4",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "16",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "17",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "20",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "22",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "24",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "25",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "27",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "29",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "34",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "35",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "36",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "38",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "40",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "32",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "43",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "6",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "49",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "50",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "52",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "54",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "3",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "59",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "5",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "62",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "63",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "65",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "66",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "42",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "69",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "57",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "67",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "19",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "72",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "33",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "58",
+    "type" : "owl:objectProperty"
+  } ],
+  "propertyAttribute" : [ {
+    "iri" : "https://marijnjanssensteenberg.github.io/rii#hasDimension",
+    "baseIri" : "https://marijnjanssensteenberg.github.io/rii",
+    "range" : "2",
+    "label" : {
+      "IRI-based" : "hasDimension",
+      "en" : "has dimension",
+      "nl" : "heeft afmeting"
+    },
+    "superproperty" : [ "3" ],
+    "domain" : "1",
+    "subproperty" : [ "4", "5", "6" ],
+    "attributes" : [ "object" ],
+    "id" : "0"
+  }, {
+    "iri" : "https://marijnjanssensteenberg.github.io/rii#hasWidth",
+    "baseIri" : "https://marijnjanssensteenberg.github.io/rii",
+    "range" : "15",
+    "label" : {
+      "IRI-based" : "hasWidth",
+      "en" : "has width",
+      "nl" : "heeft breedte"
+    },
+    "superproperty" : [ "0" ],
+    "domain" : "14",
+    "attributes" : [ "object" ],
+    "id" : "4"
+  }, {
+    "range" : "12",
+    "domain" : "11",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "16"
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#topObjectProperty",
+    "baseIri" : "http://www.w3.org/2002/07/owl",
+    "range" : "18",
+    "label" : {
+      "IRI-based" : "topObjectProperty"
+    },
+    "domain" : "18",
+    "subproperty" : [ "19" ],
+    "attributes" : [ "object", "external" ],
+    "id" : "17"
+  }, {
+    "iri" : "https://marijnjanssensteenberg.github.io/rii#replacesElement",
+    "baseIri" : "https://marijnjanssensteenberg.github.io/rii",
+    "range" : "21",
+    "label" : {
+      "IRI-based" : "replacesElement",
+      "en" : "replaces element",
+      "nl" : "vervangt element"
+    },
+    "domain" : "21",
+    "attributes" : [ "object" ],
+    "id" : "20"
+  }, {
+    "range" : "8",
+    "domain" : "23",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "22"
+  }, {
+    "range" : "8",
+    "domain" : "7",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "24"
+  }, {
+    "range" : "12",
+    "domain" : "26",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "25"
+  }, {
+    "range" : "12",
+    "domain" : "28",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "27"
+  }, {
+    "iri" : "https://marijnjanssensteenberg.github.io/rii#capturedResource",
+    "inverse" : "32",
+    "baseIri" : "https://marijnjanssensteenberg.github.io/rii",
+    "range" : "31",
+    "label" : {
+      "IRI-based" : "capturedResource",
+      "en" : "captured external resource",
+      "nl" : "vastgelegde externe bron"
+    },
+    "superproperty" : [ "33" ],
+    "domain" : "30",
+    "attributes" : [ "object" ],
+    "id" : "29"
+  }, {
+    "range" : "8",
+    "domain" : "2",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "34"
+  }, {
+    "range" : "2",
+    "domain" : "15",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "35"
+  }, {
+    "range" : "8",
+    "domain" : "37",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "36"
+  }, {
+    "range" : "8",
+    "domain" : "39",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "38"
+  }, {
+    "iri" : "https://marijnjanssensteenberg.github.io/rii#hasLocation",
+    "baseIri" : "https://marijnjanssensteenberg.github.io/rii",
+    "range" : "39",
+    "label" : {
+      "IRI-based" : "hasLocation",
+      "en" : "has location",
+      "nl" : "heeft locatie"
+    },
+    "superproperty" : [ "3" ],
+    "domain" : "41",
+    "attributes" : [ "object" ],
+    "id" : "40"
+  }, {
+    "iri" : "https://marijnjanssensteenberg.github.io/rii#resourceCapturedDuringTask",
+    "baseIri" : "https://marijnjanssensteenberg.github.io/rii",
+    "range" : "30",
+    "label" : {
+      "IRI-based" : "resourceCapturedDuringTask",
+      "en" : "captured during task (external resource)",
+      "nl" : "vastgelegd tijdens taak (externe bron)"
+    },
+    "superproperty" : [ "42" ],
+    "domain" : "31",
+    "attributes" : [ "object" ],
+    "id" : "32"
+  }, {
+    "iri" : "https://marijnjanssensteenberg.github.io/rii#hasPhysicalTag",
+    "baseIri" : "https://marijnjanssensteenberg.github.io/rii",
+    "range" : "7",
+    "label" : {
+      "IRI-based" : "hasPhysicalTag",
+      "en" : "has physical tag",
+      "nl" : "heeft fysiek merk"
+    },
+    "superproperty" : [ "3" ],
+    "domain" : "44",
+    "attributes" : [ "object" ],
+    "id" : "43"
+  }, {
+    "iri" : "https://marijnjanssensteenberg.github.io/rii#hasThickness",
+    "baseIri" : "https://marijnjanssensteenberg.github.io/rii",
+    "range" : "9",
+    "label" : {
+      "IRI-based" : "hasThickness",
+      "en" : "has thickness",
+      "nl" : "heeft dikte"
+    },
+    "superproperty" : [ "0" ],
+    "domain" : "48",
+    "attributes" : [ "object" ],
+    "id" : "6"
+  }, {
+    "range" : "2",
+    "domain" : "9",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "49"
+  }, {
+    "range" : "31",
+    "domain" : "51",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "50"
+  }, {
+    "iri" : "https://marijnjanssensteenberg.github.io/rii#coveredByIntervention",
+    "baseIri" : "https://marijnjanssensteenberg.github.io/rii",
+    "range" : "45",
+    "label" : {
+      "IRI-based" : "coveredByIntervention",
+      "en" : "covered by intervention",
+      "nl" : "behandeld door interventie"
+    },
+    "domain" : "53",
+    "attributes" : [ "object" ],
+    "id" : "52"
+  }, {
+    "range" : "2",
+    "domain" : "55",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "54"
+  }, {
+    "iri" : "https://marijnjanssensteenberg.github.io/rii#hasElementProperty",
+    "baseIri" : "https://marijnjanssensteenberg.github.io/rii",
+    "range" : "8",
+    "label" : {
+      "IRI-based" : "hasElementProperty",
+      "en" : "has element property",
+      "nl" : "heeft elementproperty"
+    },
+    "domain" : "56",
+    "subproperty" : [ "40", "0", "43", "57", "58" ],
+    "attributes" : [ "object" ],
+    "id" : "3"
+  }, {
+    "range" : "45",
+    "domain" : "46",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "59"
+  }, {
+    "iri" : "https://marijnjanssensteenberg.github.io/rii#hasLength",
+    "baseIri" : "https://marijnjanssensteenberg.github.io/rii",
+    "range" : "55",
+    "label" : {
+      "IRI-based" : "hasLength",
+      "en" : "has length",
+      "nl" : "heeft lengte"
+    },
+    "superproperty" : [ "0" ],
+    "domain" : "60",
+    "attributes" : [ "object" ],
+    "id" : "5"
+  }, {
+    "range" : "45",
+    "domain" : "47",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "62"
+  }, {
+    "range" : "45",
+    "domain" : "12",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "63"
+  }, {
+    "iri" : "https://marijnjanssensteenberg.github.io/rii#chosenIntervention",
+    "baseIri" : "https://marijnjanssensteenberg.github.io/rii",
+    "range" : "45",
+    "label" : {
+      "IRI-based" : "chosenIntervention",
+      "en" : "chosen intervention",
+      "nl" : "gekozen interventie"
+    },
+    "domain" : "53",
+    "attributes" : [ "object" ],
+    "id" : "65"
+  }, {
+    "iri" : "https://marijnjanssensteenberg.github.io/rii#describesElement",
+    "inverse" : "67",
+    "baseIri" : "https://marijnjanssensteenberg.github.io/rii",
+    "range" : "21",
+    "label" : {
+      "IRI-based" : "describesElement",
+      "en" : "describes element",
+      "nl" : "beschrijft element"
+    },
+    "domain" : "31",
+    "attributes" : [ "object" ],
+    "id" : "66"
+  }, {
+    "iri" : "https://marijnjanssensteenberg.github.io/rii#capturedDuringTask",
+    "inverse" : "33",
+    "baseIri" : "https://marijnjanssensteenberg.github.io/rii",
+    "range" : "68",
+    "label" : {
+      "IRI-based" : "capturedDuringTask",
+      "en" : "captured during task",
+      "nl" : "vastgelegd tijdens taak"
+    },
+    "domain" : "18",
+    "subproperty" : [ "32" ],
+    "attributes" : [ "object" ],
+    "id" : "42"
+  }, {
+    "iri" : "https://marijnjanssensteenberg.github.io/rii#seeAlsoThesaurusConcept",
+    "baseIri" : "https://marijnjanssensteenberg.github.io/rii",
+    "range" : "10",
+    "label" : {
+      "IRI-based" : "seeAlsoThesaurusConcept",
+      "en" : "see also thesaurus concept",
+      "nl" : "zie ook thesaurus concept"
+    },
+    "domain" : "70",
+    "attributes" : [ "object" ],
+    "id" : "69"
+  }, {
+    "iri" : "https://marijnjanssensteenberg.github.io/rii#hasMaterial",
+    "baseIri" : "https://marijnjanssensteenberg.github.io/rii",
+    "range" : "37",
+    "label" : {
+      "IRI-based" : "hasMaterial",
+      "en" : "has material",
+      "nl" : "heeft materiaal"
+    },
+    "superproperty" : [ "3" ],
+    "domain" : "64",
+    "attributes" : [ "object" ],
+    "id" : "57"
+  }, {
+    "iri" : "https://marijnjanssensteenberg.github.io/rii#hasDescriptionInResource",
+    "baseIri" : "https://marijnjanssensteenberg.github.io/rii",
+    "range" : "18",
+    "label" : {
+      "IRI-based" : "hasDescriptionInResource",
+      "en" : "has description in resource",
+      "nl" : "wordt beschreven in externe bron"
+    },
+    "domain" : "18",
+    "attributes" : [ "object" ],
+    "id" : "67"
+  }, {
+    "iri" : "https://w3id.org/cto#isSubjectOfTask",
+    "baseIri" : "https://w3id.org/cto",
+    "range" : "18",
+    "label" : {
+      "IRI-based" : "isSubjectOfTask"
+    },
+    "superproperty" : [ "17" ],
+    "domain" : "18",
+    "attributes" : [ "object", "external" ],
+    "id" : "19"
+  }, {
+    "iri" : "https://marijnjanssensteenberg.github.io/rii#filePath",
+    "baseIri" : "https://marijnjanssensteenberg.github.io/rii",
+    "range" : "71",
+    "label" : {
+      "IRI-based" : "filePath",
+      "en" : "file path",
+      "nl" : "heeft bestandslocatie"
+    },
+    "domain" : "18",
+    "attributes" : [ "datatype" ],
+    "id" : "72"
+  }, {
+    "iri" : "https://marijnjanssensteenberg.github.io/rii#capturedInformation",
+    "baseIri" : "https://marijnjanssensteenberg.github.io/rii",
+    "range" : "18",
+    "label" : {
+      "IRI-based" : "capturedInformation",
+      "en" : "captured information",
+      "nl" : "vastgelegde informatie"
+    },
+    "domain" : "18",
+    "subproperty" : [ "29" ],
+    "attributes" : [ "object" ],
+    "id" : "33"
+  }, {
+    "iri" : "https://marijnjanssensteenberg.github.io/rii#hasShape",
+    "baseIri" : "https://marijnjanssensteenberg.github.io/rii",
+    "range" : "23",
+    "label" : {
+      "IRI-based" : "hasShape",
+      "en" : "has shape",
+      "nl" : "heeft vorm"
+    },
+    "superproperty" : [ "3" ],
+    "domain" : "61",
+    "attributes" : [ "object" ],
+    "id" : "58"
+  } ]
+}
